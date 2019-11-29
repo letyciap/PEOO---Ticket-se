@@ -29,21 +29,12 @@ public class Ticketse extends javax.swing.JFrame {
 
         jScrollBar1 = new javax.swing.JScrollBar();
         jToggleButton1 = new javax.swing.JToggleButton();
+        logo = new javax.swing.JLabel();
         barraderolagem1 = new javax.swing.JScrollBar();
         botaoEntrar = new javax.swing.JButton();
         botaoCadastrar = new javax.swing.JButton();
         campoDePesquisa = new javax.swing.JTextField();
         botaoBuscar = new javax.swing.JButton();
-        quadradoEvento2 = new javax.swing.JPanel();
-        titulo2 = new javax.swing.JLabel();
-        descricao2 = new javax.swing.JLabel();
-        comprar2 = new javax.swing.JButton();
-        textoData2 = new javax.swing.JTextField();
-        data2 = new javax.swing.JLabel();
-        textoHora2 = new javax.swing.JTextField();
-        hora2 = new javax.swing.JLabel();
-        textoLocal2 = new javax.swing.JTextField();
-        local2 = new javax.swing.JLabel();
         quadradoEvento1 = new javax.swing.JPanel();
         titulo1 = new javax.swing.JLabel();
         descricao1 = new javax.swing.JLabel();
@@ -54,13 +45,33 @@ public class Ticketse extends javax.swing.JFrame {
         hora1 = new javax.swing.JLabel();
         textoLocal1 = new javax.swing.JTextField();
         local1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        quadradoEvento2 = new javax.swing.JPanel();
+        titulo2 = new javax.swing.JLabel();
+        descricao2 = new javax.swing.JLabel();
+        comprar2 = new javax.swing.JButton();
+        textoData2 = new javax.swing.JTextField();
+        data2 = new javax.swing.JLabel();
+        textoHora2 = new javax.swing.JTextField();
+        hora2 = new javax.swing.JLabel();
+        textoLocal2 = new javax.swing.JTextField();
+        local2 = new javax.swing.JLabel();
+        quadradoEvento3 = new javax.swing.JPanel();
+        titulo3 = new javax.swing.JLabel();
+        descricao3 = new javax.swing.JLabel();
+        comprar3 = new javax.swing.JButton();
+        textoData3 = new javax.swing.JTextField();
+        data3 = new javax.swing.JLabel();
+        textoHora3 = new javax.swing.JTextField();
+        hora3 = new javax.swing.JLabel();
+        textoLocal3 = new javax.swing.JTextField();
+        local3 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(249, 253, 255));
+
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
         barraderolagem1.setBackground(new java.awt.Color(149, 170, 247));
         barraderolagem1.setForeground(new java.awt.Color(149, 170, 247));
@@ -103,108 +114,6 @@ public class Ticketse extends javax.swing.JFrame {
                 botaoBuscarActionPerformed(evt);
             }
         });
-
-        quadradoEvento2.setBackground(new java.awt.Color(255, 255, 255));
-        quadradoEvento2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-
-        titulo2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        titulo2.setText("Título");
-
-        descricao2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        descricao2.setForeground(new java.awt.Color(150, 149, 149));
-        descricao2.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
-
-        comprar2.setBackground(new java.awt.Color(71, 94, 176));
-        comprar2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        comprar2.setForeground(new java.awt.Color(255, 255, 255));
-        comprar2.setText("Comprar");
-        comprar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        comprar2.setBorderPainted(false);
-        comprar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        comprar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comprar2ActionPerformed(evt);
-            }
-        });
-
-        textoData2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoData2.setForeground(new java.awt.Color(115, 115, 115));
-        textoData2.setText("Data:");
-        textoData2.setBorder(null);
-        textoData2.setOpaque(false);
-
-        data2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        data2.setForeground(new java.awt.Color(115, 115, 115));
-        data2.setText("31/02/2019");
-
-        textoHora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoHora2.setForeground(new java.awt.Color(115, 115, 115));
-        textoHora2.setText("Hora:");
-        textoHora2.setBorder(null);
-        textoHora2.setOpaque(false);
-
-        hora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        hora2.setForeground(new java.awt.Color(115, 115, 115));
-        hora2.setText("25h");
-
-        textoLocal2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoLocal2.setForeground(new java.awt.Color(115, 115, 115));
-        textoLocal2.setText("Local:");
-        textoLocal2.setBorder(null);
-        textoLocal2.setOpaque(false);
-
-        local2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        local2.setForeground(new java.awt.Color(115, 115, 115));
-        local2.setText("Casa");
-
-        javax.swing.GroupLayout quadradoEvento2Layout = new javax.swing.GroupLayout(quadradoEvento2);
-        quadradoEvento2.setLayout(quadradoEvento2Layout);
-        quadradoEvento2Layout.setHorizontalGroup(
-            quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                        .addComponent(titulo2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                        .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(data2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(hora2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local2))
-                            .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, 0)))
-                .addContainerGap())
-        );
-        quadradoEvento2Layout.setVerticalGroup(
-            quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titulo2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(data2)
-                    .addComponent(hora2)
-                    .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(local2)
-                    .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
 
         quadradoEvento1.setBackground(new java.awt.Color(255, 255, 255));
         quadradoEvento1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
@@ -291,13 +200,13 @@ public class Ticketse extends javax.swing.JFrame {
         quadradoEvento1Layout.setVerticalGroup(
             quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(quadradoEvento1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comprar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titulo1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(data1)
                     .addComponent(hora1)
@@ -305,20 +214,211 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(local1)
                     .addComponent(textoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textoData1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(7, 7, 7))
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
+        quadradoEvento2.setBackground(new java.awt.Color(255, 255, 255));
+        quadradoEvento2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        titulo2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        titulo2.setText("Título");
+
+        descricao2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        descricao2.setForeground(new java.awt.Color(150, 149, 149));
+        descricao2.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
+
+        comprar2.setBackground(new java.awt.Color(71, 94, 176));
+        comprar2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        comprar2.setForeground(new java.awt.Color(255, 255, 255));
+        comprar2.setText("Comprar");
+        comprar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        comprar2.setBorderPainted(false);
+        comprar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comprar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprar2ActionPerformed(evt);
+            }
+        });
+
+        textoData2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoData2.setForeground(new java.awt.Color(115, 115, 115));
+        textoData2.setText("Data:");
+        textoData2.setBorder(null);
+        textoData2.setOpaque(false);
+
+        data2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        data2.setForeground(new java.awt.Color(115, 115, 115));
+        data2.setText("31/02/2019");
+
+        textoHora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoHora2.setForeground(new java.awt.Color(115, 115, 115));
+        textoHora2.setText("Hora:");
+        textoHora2.setBorder(null);
+        textoHora2.setOpaque(false);
+
+        hora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        hora2.setForeground(new java.awt.Color(115, 115, 115));
+        hora2.setText("25h");
+
+        textoLocal2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoLocal2.setForeground(new java.awt.Color(115, 115, 115));
+        textoLocal2.setText("Local:");
+        textoLocal2.setBorder(null);
+        textoLocal2.setOpaque(false);
+
+        local2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        local2.setForeground(new java.awt.Color(115, 115, 115));
+        local2.setText("Casa");
+
+        javax.swing.GroupLayout quadradoEvento2Layout = new javax.swing.GroupLayout(quadradoEvento2);
+        quadradoEvento2.setLayout(quadradoEvento2Layout);
+        quadradoEvento2Layout.setHorizontalGroup(
+            quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                        .addComponent(titulo2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                        .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                                .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(data2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hora2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(local2))
+                            .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        quadradoEvento2Layout.setVerticalGroup(
+            quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titulo2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(data2)
+                    .addComponent(hora2)
+                    .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(local2)
+                    .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(7, 7, 7))
+        );
+
+        quadradoEvento3.setBackground(new java.awt.Color(255, 255, 255));
+        quadradoEvento3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+
+        titulo3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        titulo3.setText("Título");
+
+        descricao3.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        descricao3.setForeground(new java.awt.Color(150, 149, 149));
+        descricao3.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
+
+        comprar3.setBackground(new java.awt.Color(71, 94, 176));
+        comprar3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        comprar3.setForeground(new java.awt.Color(255, 255, 255));
+        comprar3.setText("Comprar");
+        comprar3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        comprar3.setBorderPainted(false);
+        comprar3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comprar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprar3ActionPerformed(evt);
+            }
+        });
+
+        textoData3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoData3.setForeground(new java.awt.Color(115, 115, 115));
+        textoData3.setText("Data:");
+        textoData3.setBorder(null);
+        textoData3.setOpaque(false);
+
+        data3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        data3.setForeground(new java.awt.Color(115, 115, 115));
+        data3.setText("31/02/2019");
+
+        textoHora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoHora3.setForeground(new java.awt.Color(115, 115, 115));
+        textoHora3.setText("Hora:");
+        textoHora3.setBorder(null);
+        textoHora3.setOpaque(false);
+
+        hora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        hora3.setForeground(new java.awt.Color(115, 115, 115));
+        hora3.setText("25h");
+
+        textoLocal3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textoLocal3.setForeground(new java.awt.Color(115, 115, 115));
+        textoLocal3.setText("Local:");
+        textoLocal3.setBorder(null);
+        textoLocal3.setOpaque(false);
+
+        local3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        local3.setForeground(new java.awt.Color(115, 115, 115));
+        local3.setText("Casa");
+
+        javax.swing.GroupLayout quadradoEvento3Layout = new javax.swing.GroupLayout(quadradoEvento3);
+        quadradoEvento3.setLayout(quadradoEvento3Layout);
+        quadradoEvento3Layout.setHorizontalGroup(
+            quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                        .addComponent(titulo3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comprar3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                        .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                                .addComponent(textoData3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(data3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(textoHora3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hora3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(textoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(local3))
+                            .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        quadradoEvento3Layout.setVerticalGroup(
+            quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comprar3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titulo3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(data3)
+                    .addComponent(hora3)
+                    .addComponent(textoHora3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(local3)
+                    .addComponent(textoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textoData3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(7, 7, 7))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -326,47 +426,48 @@ public class Ticketse extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(quadradoEvento1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(129, 129, 129)
-                                .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(botaoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(6, 6, 6)
+                        .addComponent(logo)
+                        .addGap(129, 129, 129)
+                        .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(botaoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(8, 8, 8)
                 .addComponent(barraderolagem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addComponent(barraderolagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botaoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                .addGap(22, 22, 22)
+                .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(barraderolagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -374,10 +475,14 @@ public class Ticketse extends javax.swing.JFrame {
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
         // TODO add your handling code here:
+        Login login = new Login(this, false);
+        login.setVisible(true);
     }//GEN-LAST:event_botaoEntrarActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
         // TODO add your handling code here:
+        CadastroUsuario cadastroU = new CadastroUsuario(this, false);
+        cadastroU.setVisible(true);
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 
     private void botaoBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoBuscarActionPerformed
@@ -391,6 +496,10 @@ public class Ticketse extends javax.swing.JFrame {
     private void comprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_comprar2ActionPerformed
+
+    private void comprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comprar3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -435,27 +544,36 @@ public class Ticketse extends javax.swing.JFrame {
     private javax.swing.JTextField campoDePesquisa;
     private javax.swing.JButton comprar1;
     private javax.swing.JButton comprar2;
+    private javax.swing.JButton comprar3;
     private javax.swing.JLabel data1;
     private javax.swing.JLabel data2;
+    private javax.swing.JLabel data3;
     private javax.swing.JLabel descricao1;
     private javax.swing.JLabel descricao2;
+    private javax.swing.JLabel descricao3;
     private javax.swing.JLabel hora1;
     private javax.swing.JLabel hora2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel hora3;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel local1;
     private javax.swing.JLabel local2;
+    private javax.swing.JLabel local3;
+    private javax.swing.JLabel logo;
     private javax.swing.JPanel quadradoEvento1;
     private javax.swing.JPanel quadradoEvento2;
+    private javax.swing.JPanel quadradoEvento3;
     private javax.swing.JTextField textoData1;
     private javax.swing.JTextField textoData2;
+    private javax.swing.JTextField textoData3;
     private javax.swing.JTextField textoHora1;
     private javax.swing.JTextField textoHora2;
+    private javax.swing.JTextField textoHora3;
     private javax.swing.JTextField textoLocal1;
     private javax.swing.JTextField textoLocal2;
+    private javax.swing.JTextField textoLocal3;
     private javax.swing.JLabel titulo1;
     private javax.swing.JLabel titulo2;
+    private javax.swing.JLabel titulo3;
     // End of variables declaration//GEN-END:variables
 }
