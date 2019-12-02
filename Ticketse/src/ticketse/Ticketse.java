@@ -475,13 +475,13 @@ public class Ticketse extends javax.swing.JFrame {
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
         // TODO add your handling code here:
-        Login login = new Login(this, false);
+        Login login = new Login();
         login.setVisible(true);
     }//GEN-LAST:event_botaoEntrarActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
         // TODO add your handling code here:
-        CadastroUsuario cadastroU = new CadastroUsuario(this, false);
+        Cadastro cadastroU = new Cadastro();
         cadastroU.setVisible(true);
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 

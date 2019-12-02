@@ -7,16 +7,19 @@ package ticketse;
 
 /**
  *
- * @author glori
+ * @author 20181041110020
  */
-public class Login extends javax.swing.JDialog {
+public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form Login
+     * Creates new form LoginO
      */
-    public Login(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public Login() {
         initComponents();
+    }
+
+    Login(Ticketse aThis, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -28,12 +31,24 @@ public class Login extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        botaoUsuario = new javax.swing.JButton();
-        botaoCadastrar = new javax.swing.JTextField();
-        logo = new javax.swing.JLabel();
         botaoAdm = new javax.swing.JButton();
+        botaoUsuario = new javax.swing.JButton();
+        textCadastrar = new javax.swing.JTextField();
+        logo = new javax.swing.JLabel();
+        botaoCadastrar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        botaoAdm.setBackground(new java.awt.Color(255, 255, 255));
+        botaoAdm.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        botaoAdm.setForeground(new java.awt.Color(0, 32, 144));
+        botaoAdm.setText("ADMINISTRADOR");
+        botaoAdm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botaoAdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoAdmActionPerformed(evt);
+            }
+        });
 
         botaoUsuario.setBackground(new java.awt.Color(255, 255, 255));
         botaoUsuario.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
@@ -46,41 +61,46 @@ public class Login extends javax.swing.JDialog {
             }
         });
 
-        botaoCadastrar.setBackground(new java.awt.Color(240, 240, 240));
+        textCadastrar.setBackground(new java.awt.Color(240, 240, 240));
+        textCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textCadastrar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textCadastrar.setText("Não tem login?");
+        textCadastrar.setBorder(null);
+        textCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        textCadastrar.setOpaque(false);
+        textCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textCadastrarActionPerformed(evt);
+            }
+        });
+
+        logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
+
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        botaoCadastrar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        botaoCadastrar.setText("Não tem login? Cadastre-se");
-        botaoCadastrar.setBorder(null);
+        botaoCadastrar.setText("Cadastre-se!");
         botaoCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botaoCadastrar.setOpaque(false);
         botaoCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoCadastrarActionPerformed(evt);
             }
         });
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
-
-        botaoAdm.setBackground(new java.awt.Color(255, 255, 255));
-        botaoAdm.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        botaoAdm.setForeground(new java.awt.Color(0, 32, 144));
-        botaoAdm.setText("ADMINISTRADOR");
-        botaoAdm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(132, 132, 132)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(botaoAdm, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addGap(121, 121, 121)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(botaoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botaoAdm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(logo))
-                    .addComponent(botaoCadastrar))
-                .addGap(0, 132, Short.MAX_VALUE))
+                        .addComponent(textCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botaoCadastrar))
+                    .addComponent(logo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,19 +112,35 @@ public class Login extends javax.swing.JDialog {
                 .addGap(10, 10, 10)
                 .addComponent(botaoAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(textCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoCadastrar))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void botaoAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdmActionPerformed
+        // TODO add your handling code here:
+        LoginAdm loginAdm = new LoginAdm(this, false);
+        loginAdm.setVisible(true);
+    }//GEN-LAST:event_botaoAdmActionPerformed
+
     private void botaoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoUsuarioActionPerformed
         // TODO add your handling code here:
+        LoginUsuario loginU = new LoginUsuario(this, false);
+        loginU.setVisible(true);
     }//GEN-LAST:event_botaoUsuarioActionPerformed
+
+    private void textCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textCadastrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textCadastrarActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
         // TODO add your handling code here:
+        Cadastro cadastro = new Cadastro();
+        cadastro.setVisible(true);
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 
     /**
@@ -133,26 +169,21 @@ public class Login extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
-        /* Create and display the dialog */
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Login dialog = new Login(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoAdm;
-    private javax.swing.JTextField botaoCadastrar;
+    private javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoUsuario;
     private javax.swing.JLabel logo;
+    private javax.swing.JTextField textCadastrar;
     // End of variables declaration//GEN-END:variables
 }
