@@ -29,8 +29,8 @@ public class Ticketse extends javax.swing.JFrame {
 
         jScrollBar1 = new javax.swing.JScrollBar();
         jToggleButton1 = new javax.swing.JToggleButton();
+        barraderolagem = new javax.swing.JScrollBar();
         logo = new javax.swing.JLabel();
-        barraderolagem1 = new javax.swing.JScrollBar();
         botaoEntrar = new javax.swing.JButton();
         botaoCadastrar = new javax.swing.JButton();
         campoDePesquisa = new javax.swing.JTextField();
@@ -39,31 +39,31 @@ public class Ticketse extends javax.swing.JFrame {
         titulo1 = new javax.swing.JLabel();
         descricao1 = new javax.swing.JLabel();
         comprar1 = new javax.swing.JButton();
-        textoData1 = new javax.swing.JTextField();
+        textData1 = new javax.swing.JLabel();
         data1 = new javax.swing.JLabel();
-        textoHora1 = new javax.swing.JTextField();
+        textHora1 = new javax.swing.JLabel();
         hora1 = new javax.swing.JLabel();
-        textoLocal1 = new javax.swing.JTextField();
+        textLocal1 = new javax.swing.JLabel();
         local1 = new javax.swing.JLabel();
         quadradoEvento2 = new javax.swing.JPanel();
         titulo2 = new javax.swing.JLabel();
         descricao2 = new javax.swing.JLabel();
         comprar2 = new javax.swing.JButton();
-        textoData2 = new javax.swing.JTextField();
+        textData2 = new javax.swing.JLabel();
         data2 = new javax.swing.JLabel();
-        textoHora2 = new javax.swing.JTextField();
+        textHora2 = new javax.swing.JLabel();
         hora2 = new javax.swing.JLabel();
-        textoLocal2 = new javax.swing.JTextField();
+        textLocal2 = new javax.swing.JLabel();
         local2 = new javax.swing.JLabel();
         quadradoEvento3 = new javax.swing.JPanel();
         titulo3 = new javax.swing.JLabel();
         descricao3 = new javax.swing.JLabel();
         comprar3 = new javax.swing.JButton();
-        textoData3 = new javax.swing.JTextField();
+        textData3 = new javax.swing.JLabel();
         data3 = new javax.swing.JLabel();
-        textoHora3 = new javax.swing.JTextField();
+        textHora3 = new javax.swing.JLabel();
         hora3 = new javax.swing.JLabel();
-        textoLocal3 = new javax.swing.JTextField();
+        textLocal3 = new javax.swing.JLabel();
         local3 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
@@ -71,10 +71,10 @@ public class Ticketse extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(249, 253, 255));
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
+        barraderolagem.setBackground(new java.awt.Color(149, 170, 247));
+        barraderolagem.setForeground(new java.awt.Color(149, 170, 247));
 
-        barraderolagem1.setBackground(new java.awt.Color(149, 170, 247));
-        barraderolagem1.setForeground(new java.awt.Color(149, 170, 247));
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
         botaoEntrar.setBackground(new java.awt.Color(255, 255, 255));
         botaoEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -138,31 +138,25 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
-        textoData1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoData1.setForeground(new java.awt.Color(115, 115, 115));
-        textoData1.setText("Data:");
-        textoData1.setBorder(null);
-        textoData1.setOpaque(false);
+        textData1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textData1.setForeground(new java.awt.Color(115, 115, 115));
+        textData1.setText("Data:");
 
         data1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data1.setForeground(new java.awt.Color(115, 115, 115));
         data1.setText("31/02/2019");
 
-        textoHora1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoHora1.setForeground(new java.awt.Color(115, 115, 115));
-        textoHora1.setText("Hora:");
-        textoHora1.setBorder(null);
-        textoHora1.setOpaque(false);
+        textHora1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textHora1.setForeground(new java.awt.Color(115, 115, 115));
+        textHora1.setText("Hora:");
 
         hora1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora1.setForeground(new java.awt.Color(115, 115, 115));
         hora1.setText("25h");
 
-        textoLocal1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoLocal1.setForeground(new java.awt.Color(115, 115, 115));
-        textoLocal1.setText("Local:");
-        textoLocal1.setBorder(null);
-        textoLocal1.setOpaque(false);
+        textLocal1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textLocal1.setForeground(new java.awt.Color(115, 115, 115));
+        textLocal1.setText("Local:");
 
         local1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         local1.setForeground(new java.awt.Color(115, 115, 115));
@@ -182,15 +176,15 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento1Layout.createSequentialGroup()
                         .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(quadradoEvento1Layout.createSequentialGroup()
-                                .addComponent(textoData1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(textData1)
+                                .addGap(3, 3, 3)
                                 .addComponent(data1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoHora1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textHora1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(hora1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textLocal1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(local1))
                             .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -200,7 +194,7 @@ public class Ticketse extends javax.swing.JFrame {
         quadradoEvento1Layout.setVerticalGroup(
             quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(quadradoEvento1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(11, 11, 11)
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comprar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titulo1))
@@ -210,10 +204,10 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(data1)
                     .addComponent(hora1)
-                    .addComponent(textoHora1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(local1)
-                    .addComponent(textoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoData1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textData1)
+                    .addComponent(textHora1)
+                    .addComponent(textLocal1))
                 .addGap(7, 7, 7))
         );
 
@@ -240,31 +234,25 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
-        textoData2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoData2.setForeground(new java.awt.Color(115, 115, 115));
-        textoData2.setText("Data:");
-        textoData2.setBorder(null);
-        textoData2.setOpaque(false);
+        textData2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textData2.setForeground(new java.awt.Color(115, 115, 115));
+        textData2.setText("Data:");
 
         data2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data2.setForeground(new java.awt.Color(115, 115, 115));
         data2.setText("31/02/2019");
 
-        textoHora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoHora2.setForeground(new java.awt.Color(115, 115, 115));
-        textoHora2.setText("Hora:");
-        textoHora2.setBorder(null);
-        textoHora2.setOpaque(false);
+        textHora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textHora2.setForeground(new java.awt.Color(115, 115, 115));
+        textHora2.setText("Hora:");
 
         hora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora2.setForeground(new java.awt.Color(115, 115, 115));
         hora2.setText("25h");
 
-        textoLocal2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoLocal2.setForeground(new java.awt.Color(115, 115, 115));
-        textoLocal2.setText("Local:");
-        textoLocal2.setBorder(null);
-        textoLocal2.setOpaque(false);
+        textLocal2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textLocal2.setForeground(new java.awt.Color(115, 115, 115));
+        textLocal2.setText("Local:");
 
         local2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         local2.setForeground(new java.awt.Color(115, 115, 115));
@@ -283,19 +271,19 @@ public class Ticketse extends javax.swing.JFrame {
                         .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento2Layout.createSequentialGroup()
                         .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(textData2)
+                                .addGap(3, 3, 3)
                                 .addComponent(data2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textHora2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(hora2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textLocal2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local2))
-                            .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(local2)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -308,14 +296,14 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(titulo2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(11, 11, 11)
                 .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(data2)
                     .addComponent(hora2)
-                    .addComponent(textoHora2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(local2)
-                    .addComponent(textoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoData2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textData2)
+                    .addComponent(textHora2)
+                    .addComponent(textLocal2))
                 .addGap(7, 7, 7))
         );
 
@@ -342,31 +330,25 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
-        textoData3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoData3.setForeground(new java.awt.Color(115, 115, 115));
-        textoData3.setText("Data:");
-        textoData3.setBorder(null);
-        textoData3.setOpaque(false);
+        textData3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textData3.setForeground(new java.awt.Color(115, 115, 115));
+        textData3.setText("Data:");
 
         data3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data3.setForeground(new java.awt.Color(115, 115, 115));
         data3.setText("31/02/2019");
 
-        textoHora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoHora3.setForeground(new java.awt.Color(115, 115, 115));
-        textoHora3.setText("Hora:");
-        textoHora3.setBorder(null);
-        textoHora3.setOpaque(false);
+        textHora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textHora3.setForeground(new java.awt.Color(115, 115, 115));
+        textHora3.setText("Hora:");
 
         hora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora3.setForeground(new java.awt.Color(115, 115, 115));
         hora3.setText("25h");
 
-        textoLocal3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoLocal3.setForeground(new java.awt.Color(115, 115, 115));
-        textoLocal3.setText("Local:");
-        textoLocal3.setBorder(null);
-        textoLocal3.setOpaque(false);
+        textLocal3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textLocal3.setForeground(new java.awt.Color(115, 115, 115));
+        textLocal3.setText("Local:");
 
         local3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         local3.setForeground(new java.awt.Color(115, 115, 115));
@@ -385,19 +367,19 @@ public class Ticketse extends javax.swing.JFrame {
                         .addComponent(comprar3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                                .addComponent(textoData3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(textData3)
+                                .addGap(3, 3, 3)
                                 .addComponent(data3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoHora3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textHora3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(hora3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textLocal3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local3))
-                            .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(local3)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -410,14 +392,14 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(titulo3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(11, 11, 11)
                 .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(data3)
                     .addComponent(hora3)
-                    .addComponent(textoHora3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(local3)
-                    .addComponent(textoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoData3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textData3)
+                    .addComponent(textHora3)
+                    .addComponent(textLocal3))
                 .addGap(7, 7, 7))
         );
 
@@ -426,29 +408,26 @@ public class Ticketse extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(quadradoEvento1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botaoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(logo)
                         .addGap(129, 129, 129)
                         .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(botaoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(quadradoEvento3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(8, 8, 8)
-                .addComponent(barraderolagem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(barraderolagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(barraderolagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,17 +436,18 @@ public class Ticketse extends javax.swing.JFrame {
                         .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botaoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(barraderolagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -537,7 +517,7 @@ public class Ticketse extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollBar barraderolagem1;
+    private javax.swing.JScrollBar barraderolagem;
     private javax.swing.JButton botaoBuscar;
     private javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoEntrar;
@@ -563,15 +543,15 @@ public class Ticketse extends javax.swing.JFrame {
     private javax.swing.JPanel quadradoEvento1;
     private javax.swing.JPanel quadradoEvento2;
     private javax.swing.JPanel quadradoEvento3;
-    private javax.swing.JTextField textoData1;
-    private javax.swing.JTextField textoData2;
-    private javax.swing.JTextField textoData3;
-    private javax.swing.JTextField textoHora1;
-    private javax.swing.JTextField textoHora2;
-    private javax.swing.JTextField textoHora3;
-    private javax.swing.JTextField textoLocal1;
-    private javax.swing.JTextField textoLocal2;
-    private javax.swing.JTextField textoLocal3;
+    private javax.swing.JLabel textData1;
+    private javax.swing.JLabel textData2;
+    private javax.swing.JLabel textData3;
+    private javax.swing.JLabel textHora1;
+    private javax.swing.JLabel textHora2;
+    private javax.swing.JLabel textHora3;
+    private javax.swing.JLabel textLocal1;
+    private javax.swing.JLabel textLocal2;
+    private javax.swing.JLabel textLocal3;
     private javax.swing.JLabel titulo1;
     private javax.swing.JLabel titulo2;
     private javax.swing.JLabel titulo3;

@@ -28,69 +28,52 @@ public class Pagamento extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        textTitulo = new javax.swing.JTextField();
-        textNumeroCartao = new javax.swing.JTextField();
+        textNumeroCartao = new javax.swing.JLabel();
         numeroCartaoCampo = new javax.swing.JTextField();
-        textValidade = new javax.swing.JTextField();
-        textCodigo = new javax.swing.JTextField();
-        caixaMes = new javax.swing.JComboBox<String>();
-        caixaAno = new javax.swing.JComboBox<String>();
+        textValidade = new javax.swing.JLabel();
+        caixaMes = new javax.swing.JComboBox<>();
+        caixaAno = new javax.swing.JComboBox<>();
+        textCodigo = new javax.swing.JLabel();
         codigoCampo = new javax.swing.JTextField();
-        textNome = new javax.swing.JTextField();
+        textNome = new javax.swing.JLabel();
         nomeCampo = new javax.swing.JTextField();
-        textParcelas = new javax.swing.JTextField();
-        caixaParcelas = new javax.swing.JComboBox<String>();
+        textParcelas = new javax.swing.JLabel();
+        caixaParcelas = new javax.swing.JComboBox<>();
         cancelarBotao = new javax.swing.JButton();
         comprarBotao = new javax.swing.JButton();
+        textTitulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        textTitulo.setBackground(new java.awt.Color(240, 240, 240));
-        textTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        textTitulo.setForeground(new java.awt.Color(0, 32, 144));
-        textTitulo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textTitulo.setText("DADOS DE PAGAMENTO");
-        textTitulo.setBorder(null);
-
-        textNumeroCartao.setBackground(new java.awt.Color(240, 240, 240));
         textNumeroCartao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        textNumeroCartao.setText("Número do Cartão:");
-        textNumeroCartao.setBorder(null);
+        textNumeroCartao.setText("Número do cartão:");
 
         numeroCartaoCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        textValidade.setBackground(new java.awt.Color(240, 240, 240));
         textValidade.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        textValidade.setText("Data de Validade:");
-        textValidade.setBorder(null);
-
-        textCodigo.setBackground(new java.awt.Color(240, 240, 240));
-        textCodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        textCodigo.setText("Código de Segurança:");
-        textCodigo.setBorder(null);
+        textValidade.setText("Data de validade:");
 
         caixaMes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaMes.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Mês", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
+        caixaMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mês", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
         caixaAno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaAno.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ano", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        caixaAno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ano", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+
+        textCodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textCodigo.setText("Código de segurança:");
 
         codigoCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        textNome.setBackground(new java.awt.Color(240, 240, 240));
         textNome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         textNome.setText("Nome no cartão:");
-        textNome.setBorder(null);
 
         nomeCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        textParcelas.setBackground(new java.awt.Color(240, 240, 240));
         textParcelas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         textParcelas.setText("Número de parcelas:");
-        textParcelas.setBorder(null);
 
         caixaParcelas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         cancelarBotao.setBackground(new java.awt.Color(71, 94, 176));
         cancelarBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -112,67 +95,68 @@ public class Pagamento extends javax.swing.JDialog {
             }
         });
 
+        textTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        textTitulo.setForeground(new java.awt.Color(0, 32, 144));
+        textTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        textTitulo.setText("DADOS DE PAGAMENTO");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(textParcelas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(caixaParcelas, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(cancelarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(comprarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(nomeCampo, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(caixaParcelas, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(cancelarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(comprarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(nomeCampo, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(caixaMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(caixaAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(textValidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(textCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(codigoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addComponent(numeroCartaoCampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(textNumeroCartao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(caixaMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(caixaAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(textValidade)
+                                .addComponent(textNome))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(codigoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textCodigo)))
+                        .addComponent(numeroCartaoCampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textNumeroCartao)
+                    .addComponent(textParcelas))
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textTitulo)
                 .addGap(30, 30, 30)
                 .addComponent(textNumeroCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(numeroCartaoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(caixaMes, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(caixaAno, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(codigoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(11, 11, 11)
                 .addComponent(textNome, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(textParcelas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(textParcelas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(caixaParcelas, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -243,11 +227,11 @@ public class Pagamento extends javax.swing.JDialog {
     private javax.swing.JButton comprarBotao;
     private javax.swing.JTextField nomeCampo;
     private javax.swing.JTextField numeroCartaoCampo;
-    private javax.swing.JTextField textCodigo;
-    private javax.swing.JTextField textNome;
-    private javax.swing.JTextField textNumeroCartao;
-    private javax.swing.JTextField textParcelas;
-    private javax.swing.JTextField textTitulo;
-    private javax.swing.JTextField textValidade;
+    private javax.swing.JLabel textCodigo;
+    private javax.swing.JLabel textNome;
+    private javax.swing.JLabel textNumeroCartao;
+    private javax.swing.JLabel textParcelas;
+    private javax.swing.JLabel textTitulo;
+    private javax.swing.JLabel textValidade;
     // End of variables declaration//GEN-END:variables
 }

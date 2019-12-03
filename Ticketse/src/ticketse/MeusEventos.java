@@ -140,7 +140,7 @@ public class MeusEventos extends javax.swing.JDialog {
         textIngressosVendidos1.setText("<html>INGRESSOS<br>VENDIDOS ");
 
         opcoesBotao1.setBackground(new java.awt.Color(255, 255, 255));
-        opcoesBotao1.setIcon(new javax.swing.ImageIcon("C:\\Users\\glori\\Downloads\\Pontinhos.png")); // NOI18N
+        opcoesBotao1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
         opcoesBotao1.setBorderPainted(false);
         opcoesBotao1.setOpaque(false);
 
@@ -286,24 +286,21 @@ public class MeusEventos extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(textIngressosVendidos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento2Layout.createSequentialGroup()
+                        .addComponent(textData2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(data2))
+                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
                         .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                .addComponent(textData2)
+                                .addComponent(textCategoria2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(data2))
+                                .addComponent(categoria2))
                             .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                        .addComponent(textCategoria2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(categoria2))
-                                    .addGroup(quadradoEvento2Layout.createSequentialGroup()
-                                        .addComponent(titulo2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(descricao2)))
-                                .addGap(116, 116, 116)
-                                .addComponent(opcoesBotao2, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, 0)))
+                                .addComponent(titulo2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(descricao2)))
+                        .addGap(116, 116, 116)
+                        .addComponent(opcoesBotao2, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         quadradoEvento2Layout.setVerticalGroup(
@@ -407,8 +404,7 @@ public class MeusEventos extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(categoria3)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10))
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(quadradoEvento3Layout.createSequentialGroup()
@@ -422,8 +418,8 @@ public class MeusEventos extends javax.swing.JDialog {
                         .addGap(275, 275, 275)
                         .addComponent(ingressosVendidos3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10))))
+                        .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10))
         );
         quadradoEvento3Layout.setVerticalGroup(
             quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

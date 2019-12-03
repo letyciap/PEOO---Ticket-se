@@ -29,11 +29,11 @@ public class LoginAdm extends javax.swing.JDialog {
     private void initComponents() {
 
         logo = new javax.swing.JLabel();
-        chaveDeAcessoText = new javax.swing.JTextField();
+        chaveDeAcessoText = new javax.swing.JLabel();
         chaveDeAcessoCampo = new javax.swing.JTextField();
-        senhaText = new javax.swing.JTextField();
+        senhaText = new javax.swing.JLabel();
         senhaCampo = new javax.swing.JTextField();
-        esqueciSenhaBotao = new javax.swing.JTextField();
+        esqueciSenhaBotao = new javax.swing.JButton();
         entrarBotao = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -42,17 +42,13 @@ public class LoginAdm extends javax.swing.JDialog {
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
         chaveDeAcessoText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        chaveDeAcessoText.setText("Chave de Acesso");
-        chaveDeAcessoText.setBorder(null);
-        chaveDeAcessoText.setOpaque(false);
+        chaveDeAcessoText.setText("Chave de Acesso:");
 
         chaveDeAcessoCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         chaveDeAcessoCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
         senhaText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaText.setText("Senha");
-        senhaText.setBorder(null);
-        senhaText.setOpaque(false);
+        senhaText.setText("Senha:");
 
         senhaCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         senhaCampo.setMinimumSize(new java.awt.Dimension(6, 27));
@@ -63,49 +59,51 @@ public class LoginAdm extends javax.swing.JDialog {
         });
 
         esqueciSenhaBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        esqueciSenhaBotao.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         esqueciSenhaBotao.setText("Esqueci minha senha.");
+        esqueciSenhaBotao.setBorder(null);
+        esqueciSenhaBotao.setContentAreaFilled(false);
 
         entrarBotao.setBackground(new java.awt.Color(71, 94, 176));
         entrarBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         entrarBotao.setForeground(new java.awt.Color(255, 255, 255));
         entrarBotao.setText("ENTRAR");
+        entrarBotao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(143, 143, 143)
+                .addContainerGap(83, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(esqueciSenhaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(senhaText)
+                    .addComponent(chaveDeAcessoText)
                     .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(senhaCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(esqueciSenhaBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                        .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(senhaText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(chaveDeAcessoText, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(143, Short.MAX_VALUE))
+                        .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                        .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(143, 143, 143)
+                .addGap(33, 33, 33)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(chaveDeAcessoText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(chaveDeAcessoText)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(senhaText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(senhaText)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(senhaCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(esqueciSenhaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(esqueciSenhaBotao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(entrarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -162,11 +160,11 @@ public class LoginAdm extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField chaveDeAcessoCampo;
-    private javax.swing.JTextField chaveDeAcessoText;
+    private javax.swing.JLabel chaveDeAcessoText;
     private javax.swing.JButton entrarBotao;
-    private javax.swing.JTextField esqueciSenhaBotao;
+    private javax.swing.JButton esqueciSenhaBotao;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField senhaCampo;
-    private javax.swing.JTextField senhaText;
+    private javax.swing.JLabel senhaText;
     // End of variables declaration//GEN-END:variables
 }

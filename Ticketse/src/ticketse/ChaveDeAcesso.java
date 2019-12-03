@@ -29,34 +29,34 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     private void initComponents() {
 
         logo = new javax.swing.JLabel();
+        textCadastroRealizado = new javax.swing.JLabel();
         chaveDeAcesso = new javax.swing.JLabel();
-        botaoEntrar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         textChaveDeAcesso = new javax.swing.JLabel();
+        botaoEntrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
+        textCadastroRealizado.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        textCadastroRealizado.setForeground(new java.awt.Color(115, 115, 115));
+        textCadastroRealizado.setText("Cadastro realizado com sucesso!");
+
         chaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         chaveDeAcesso.setForeground(new java.awt.Color(0, 32, 144));
         chaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         chaveDeAcesso.setText("120323");
 
-        botaoEntrar.setBackground(new java.awt.Color(71, 94, 176));
-        botaoEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        botaoEntrar.setForeground(new java.awt.Color(255, 255, 255));
-        botaoEntrar.setText("ENTRAR");
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(115, 115, 115));
-        jLabel1.setText("Cadastro realizado com sucesso!");
-
         textChaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textChaveDeAcesso.setForeground(new java.awt.Color(82, 77, 77));
         textChaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textChaveDeAcesso.setText("Chave de Acesso");
+
+        botaoEntrar.setBackground(new java.awt.Color(71, 94, 176));
+        botaoEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        botaoEntrar.setForeground(new java.awt.Color(255, 255, 255));
+        botaoEntrar.setText("ENTRAR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,35 +64,35 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(190, 190, 190)
-                        .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1))
+                        .addComponent(textCadastroRealizado))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(104, Short.MAX_VALUE)
+                        .addContainerGap(54, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(textChaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(chaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE))))
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLabel1)
-                .addGap(46, 46, 46)
+                .addComponent(textCadastroRealizado)
+                .addGap(20, 20, 20)
                 .addComponent(chaveDeAcesso, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(textChaveDeAcesso)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -144,8 +144,8 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoEntrar;
     private javax.swing.JLabel chaveDeAcesso;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel logo;
+    private javax.swing.JLabel textCadastroRealizado;
     private javax.swing.JLabel textChaveDeAcesso;
     // End of variables declaration//GEN-END:variables
 }

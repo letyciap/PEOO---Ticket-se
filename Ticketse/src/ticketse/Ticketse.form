@@ -36,36 +36,32 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="quadradoEvento2" alignment="0" max="32767" attributes="0"/>
                   <Component id="quadradoEvento1" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="campoDePesquisa" min="-2" pref="358" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="botaoBuscar" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="logo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="129" pref="129" max="-2" attributes="0"/>
                       <Component id="botaoEntrar" min="-2" pref="84" max="-2" attributes="0"/>
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                      <Component id="botaoCadastrar" min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="botaoCadastrar" min="-2" pref="95" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="campoDePesquisa" min="-2" pref="358" max="-2" attributes="0"/>
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                      <Component id="botaoBuscar" min="-2" pref="103" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="quadradoEvento2" alignment="1" max="32767" attributes="0"/>
-                  <Component id="quadradoEvento3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="quadradoEvento3" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-              <Component id="barraderolagem1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <Component id="barraderolagem" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="barraderolagem1" min="-2" pref="500" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
@@ -75,37 +71,38 @@
                   <Component id="botaoEntrar" min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="botaoCadastrar" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="campoDePesquisa" min="-2" pref="38" max="-2" attributes="0"/>
                   <Component id="botaoBuscar" min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Component id="quadradoEvento2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="quadradoEvento1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="quadradoEvento2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="quadradoEvento3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
+          <Component id="barraderolagem" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="logo">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ticketse/LOGO.png"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JScrollBar" name="barraderolagem1">
+    <Component class="javax.swing.JScrollBar" name="barraderolagem">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f7" green="aa" red="95" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f7" green="aa" red="95" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="logo">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ticketse/LOGO.png"/>
         </Property>
       </Properties>
     </Component>
@@ -232,15 +229,15 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="textoData1" min="-2" pref="36" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="textData1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Component id="data1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoHora1" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="textHora1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="hora1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoLocal1" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="textLocal1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="local1" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -256,7 +253,7 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="comprar1" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="titulo1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -267,10 +264,10 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="data1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hora1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoHora1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="local1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoLocal1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoData1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textData1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textHora1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textLocal1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               </Group>
@@ -325,7 +322,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comprar1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoData1">
+        <Component class="javax.swing.JLabel" name="textData1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -334,10 +331,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Data:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="data1">
@@ -351,7 +344,7 @@
             <Property name="text" type="java.lang.String" value="31/02/2019"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoHora1">
+        <Component class="javax.swing.JLabel" name="textHora1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -360,10 +353,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Hora:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="hora1">
@@ -377,7 +366,7 @@
             <Property name="text" type="java.lang.String" value="25h"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoLocal1">
+        <Component class="javax.swing.JLabel" name="textLocal1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -386,10 +375,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Local:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="local1">
@@ -422,7 +407,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -430,22 +415,22 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="comprar2" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="descricao2" alignment="0" min="-2" pref="416" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="textoData2" min="-2" pref="36" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="textData2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Component id="data2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoHora2" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="textHora2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="hora2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoLocal2" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="textLocal2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="local2" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="descricao2" alignment="0" min="-2" pref="416" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
@@ -464,14 +449,14 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="descricao2" min="-2" pref="29" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="data2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hora2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoHora2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="local2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoLocal2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoData2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textData2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textHora2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textLocal2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               </Group>
@@ -526,7 +511,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comprar2ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoData2">
+        <Component class="javax.swing.JLabel" name="textData2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -535,10 +520,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Data:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="data2">
@@ -552,7 +533,7 @@
             <Property name="text" type="java.lang.String" value="31/02/2019"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoHora2">
+        <Component class="javax.swing.JLabel" name="textHora2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -561,10 +542,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Hora:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="hora2">
@@ -578,7 +555,7 @@
             <Property name="text" type="java.lang.String" value="25h"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoLocal2">
+        <Component class="javax.swing.JLabel" name="textLocal2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -587,10 +564,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Local:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="local2">
@@ -623,7 +596,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -631,22 +604,22 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="comprar3" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="descricao3" alignment="0" min="-2" pref="416" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="textoData3" min="-2" pref="36" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="textData3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Component id="data3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoHora3" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="textHora3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="hora3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoLocal3" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="textLocal3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="local3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="descricao3" alignment="0" min="-2" pref="416" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
@@ -665,14 +638,14 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="descricao3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="data3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hora3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoHora3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="local3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoLocal3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoData3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textData3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textHora3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textLocal3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               </Group>
@@ -727,7 +700,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comprar3ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoData3">
+        <Component class="javax.swing.JLabel" name="textData3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -736,10 +709,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Data:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="data3">
@@ -753,7 +722,7 @@
             <Property name="text" type="java.lang.String" value="31/02/2019"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoHora3">
+        <Component class="javax.swing.JLabel" name="textHora3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -762,10 +731,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Hora:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="hora3">
@@ -779,7 +744,7 @@
             <Property name="text" type="java.lang.String" value="25h"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textoLocal3">
+        <Component class="javax.swing.JLabel" name="textLocal3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="0"/>
@@ -788,10 +753,6 @@
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Local:"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="local3">

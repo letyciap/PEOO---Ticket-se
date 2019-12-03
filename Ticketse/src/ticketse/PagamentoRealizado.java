@@ -30,7 +30,7 @@ public class PagamentoRealizado extends javax.swing.JDialog {
 
         jSeparator1 = new javax.swing.JSeparator();
         logo = new javax.swing.JLabel();
-        textPagamentoRealizado = new javax.swing.JTextField();
+        textPagamentoRealizado = new javax.swing.JLabel();
         voltarTelaIniciaoBotao = new javax.swing.JButton();
         imprimirBotao = new javax.swing.JButton();
 
@@ -39,12 +39,9 @@ public class PagamentoRealizado extends javax.swing.JDialog {
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
-        textPagamentoRealizado.setBackground(new java.awt.Color(240, 240, 240));
         textPagamentoRealizado.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         textPagamentoRealizado.setForeground(new java.awt.Color(115, 115, 115));
         textPagamentoRealizado.setText("PAGAMENTO REALIZADO COM SUCESSO!");
-        textPagamentoRealizado.setBorder(null);
-        textPagamentoRealizado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         voltarTelaIniciaoBotao.setBackground(new java.awt.Color(71, 94, 176));
         voltarTelaIniciaoBotao.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -76,28 +73,27 @@ public class PagamentoRealizado extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(68, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(voltarTelaIniciaoBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(imprimirBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(textPagamentoRealizado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(67, 67, 67))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(voltarTelaIniciaoBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(imprimirBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textPagamentoRealizado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
+                .addContainerGap(39, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addComponent(textPagamentoRealizado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
+                .addComponent(textPagamentoRealizado)
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(voltarTelaIniciaoBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(imprimirBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,7 +153,7 @@ public class PagamentoRealizado extends javax.swing.JDialog {
     private javax.swing.JButton imprimirBotao;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField textPagamentoRealizado;
+    private javax.swing.JLabel textPagamentoRealizado;
     private javax.swing.JButton voltarTelaIniciaoBotao;
     // End of variables declaration//GEN-END:variables
 }
