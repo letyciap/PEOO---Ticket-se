@@ -29,69 +29,70 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     private void initComponents() {
 
         logo = new javax.swing.JLabel();
-        textCadastroSucesso = new javax.swing.JTextField();
         chaveDeAcesso = new javax.swing.JLabel();
-        textChaveDeAcesso = new javax.swing.JTextField();
         botaoEntrar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        textChaveDeAcesso = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
-        textCadastroSucesso.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        textCadastroSucesso.setForeground(new java.awt.Color(115, 115, 115));
-        textCadastroSucesso.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textCadastroSucesso.setText("Cadastro realizado com sucesso!");
-        textCadastroSucesso.setBorder(null);
-
         chaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         chaveDeAcesso.setForeground(new java.awt.Color(0, 32, 144));
         chaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        textChaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textChaveDeAcesso.setForeground(new java.awt.Color(82, 77, 77));
-        textChaveDeAcesso.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textChaveDeAcesso.setText("Chave de Acesso");
-        textChaveDeAcesso.setBorder(null);
+        chaveDeAcesso.setText("120323");
 
         botaoEntrar.setBackground(new java.awt.Color(71, 94, 176));
         botaoEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         botaoEntrar.setForeground(new java.awt.Color(255, 255, 255));
         botaoEntrar.setText("ENTRAR");
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(115, 115, 115));
+        jLabel1.setText("Cadastro realizado com sucesso!");
+
+        textChaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textChaveDeAcesso.setForeground(new java.awt.Color(82, 77, 77));
+        textChaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        textChaveDeAcesso.setText("Chave de Acesso");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(chaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(textCadastroSucesso)
-                            .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(textChaveDeAcesso)))
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(190, 190, 190)
-                        .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(104, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(textChaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(chaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE))))
                 .addContainerGap(105, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(132, 132, 132)
+                .addGap(23, 23, 23)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(textCadastroSucesso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addComponent(jLabel1)
+                .addGap(46, 46, 46)
                 .addComponent(chaveDeAcesso, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addComponent(textChaveDeAcesso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(textChaveDeAcesso)
+                .addGap(28, 28, 28)
                 .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -143,8 +144,8 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoEntrar;
     private javax.swing.JLabel chaveDeAcesso;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField textCadastroSucesso;
-    private javax.swing.JTextField textChaveDeAcesso;
+    private javax.swing.JLabel textChaveDeAcesso;
     // End of variables declaration//GEN-END:variables
 }

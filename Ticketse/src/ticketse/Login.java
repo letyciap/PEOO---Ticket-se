@@ -33,9 +33,9 @@ public class Login extends javax.swing.JFrame {
 
         botaoAdm = new javax.swing.JButton();
         botaoUsuario = new javax.swing.JButton();
-        textCadastrar = new javax.swing.JTextField();
         logo = new javax.swing.JLabel();
         botaoCadastrar = new javax.swing.JButton();
+        textCadastrar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,19 +61,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        textCadastrar.setBackground(new java.awt.Color(240, 240, 240));
-        textCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        textCadastrar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textCadastrar.setText("Não tem login?");
-        textCadastrar.setBorder(null);
-        textCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        textCadastrar.setOpaque(false);
-        textCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textCadastrarActionPerformed(evt);
-            }
-        });
-
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
@@ -86,36 +73,40 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        textCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textCadastrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        textCadastrar.setText("Não tem login?");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(121, 121, 121)
+                .addContainerGap(76, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(botaoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(botaoAdm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botaoAdm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(textCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(textCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(botaoCadastrar))
                     .addComponent(logo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botaoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(botaoAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botaoCadastrar))
-                .addContainerGap(63, Short.MAX_VALUE))
+                    .addComponent(botaoCadastrar)
+                    .addComponent(textCadastrar))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
@@ -132,10 +123,6 @@ public class Login extends javax.swing.JFrame {
         LoginUsuario loginU = new LoginUsuario(this, false);
         loginU.setVisible(true);
     }//GEN-LAST:event_botaoUsuarioActionPerformed
-
-    private void textCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textCadastrarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textCadastrarActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
         // TODO add your handling code here:
@@ -184,6 +171,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoUsuario;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField textCadastrar;
+    private javax.swing.JLabel textCadastrar;
     // End of variables declaration//GEN-END:variables
 }

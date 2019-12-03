@@ -33,13 +33,13 @@ public class Pagamento extends javax.swing.JDialog {
         numeroCartaoCampo = new javax.swing.JTextField();
         textValidade = new javax.swing.JTextField();
         textCodigo = new javax.swing.JTextField();
-        caixaMes = new javax.swing.JComboBox<>();
-        caixaAno = new javax.swing.JComboBox<>();
+        caixaMes = new javax.swing.JComboBox<String>();
+        caixaAno = new javax.swing.JComboBox<String>();
         codigoCampo = new javax.swing.JTextField();
         textNome = new javax.swing.JTextField();
         nomeCampo = new javax.swing.JTextField();
         textParcelas = new javax.swing.JTextField();
-        caixaParcelas = new javax.swing.JComboBox<>();
+        caixaParcelas = new javax.swing.JComboBox<String>();
         cancelarBotao = new javax.swing.JButton();
         comprarBotao = new javax.swing.JButton();
 
@@ -70,10 +70,10 @@ public class Pagamento extends javax.swing.JDialog {
         textCodigo.setBorder(null);
 
         caixaMes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mês", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
+        caixaMes.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Mês", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
         caixaAno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaAno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ano", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        caixaAno.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ano", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
 
         codigoCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -90,7 +90,7 @@ public class Pagamento extends javax.swing.JDialog {
         textParcelas.setBorder(null);
 
         caixaParcelas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         cancelarBotao.setBackground(new java.awt.Color(71, 94, 176));
         cancelarBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -122,7 +122,7 @@ public class Pagamento extends javax.swing.JDialog {
                         .addGap(52, 52, 52)
                         .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
+                        .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(textNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -146,7 +146,7 @@ public class Pagamento extends javax.swing.JDialog {
                                         .addComponent(codigoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addComponent(numeroCartaoCampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(textNumeroCartao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

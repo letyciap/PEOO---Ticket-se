@@ -27,63 +27,53 @@ public class Cadastro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nomeText = new javax.swing.JTextField();
-        nomeCampo = new javax.swing.JTextField();
-        cpfText = new javax.swing.JTextField();
-        cpfCampo = new javax.swing.JTextField();
-        emailText = new javax.swing.JTextField();
-        emailCampo = new javax.swing.JTextField();
-        senhaText = new javax.swing.JTextField();
-        senhaCampo = new javax.swing.JTextField();
-        perfilText = new javax.swing.JTextField();
-        perfilCampo = new javax.swing.JComboBox<String>();
         logo = new javax.swing.JLabel();
+        nomeText = new javax.swing.JLabel();
+        nomeCampo = new javax.swing.JTextField();
+        textCPF = new javax.swing.JLabel();
+        cpfCampo = new javax.swing.JTextField();
+        textEmail = new javax.swing.JLabel();
+        emailCampo = new javax.swing.JTextField();
+        textSenha = new javax.swing.JLabel();
+        senhaCampo = new javax.swing.JTextField();
+        textPerfil = new javax.swing.JLabel();
+        perfilCampo = new javax.swing.JComboBox<String>();
         botaoCadastrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
+
         nomeText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nomeText.setText("Nome");
-        nomeText.setBorder(null);
-        nomeText.setOpaque(false);
 
         nomeCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nomeCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
-        cpfText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cpfText.setText("CPF");
-        cpfText.setBorder(null);
-        cpfText.setOpaque(false);
+        textCPF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textCPF.setText("CPF");
 
         cpfCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cpfCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
-        emailText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        emailText.setText("E-mail");
-        emailText.setBorder(null);
-        emailText.setOpaque(false);
+        textEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textEmail.setText("E-mail");
 
         emailCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         emailCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
-        senhaText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaText.setText("Senha");
-        senhaText.setBorder(null);
-        senhaText.setOpaque(false);
+        textSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textSenha.setText("Senha");
 
         senhaCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         senhaCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
-        perfilText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        perfilText.setText("Perfil");
-        perfilText.setBorder(null);
-        perfilText.setOpaque(false);
+        textPerfil.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textPerfil.setText("Perfil");
 
         perfilCampo.setEditable(true);
         perfilCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         perfilCampo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
-
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
         botaoCadastrar.setBackground(new java.awt.Color(71, 94, 176));
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -95,67 +85,58 @@ public class Cadastro extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(177, 177, 177)
-                                .addComponent(logo))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(nomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(cpfText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(emailText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(senhaText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(perfilText, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 168, Short.MAX_VALUE))
+                        .addGap(0, 78, Short.MAX_VALUE)
+                        .addComponent(logo)
+                        .addGap(0, 79, Short.MAX_VALUE))
+                    .addComponent(botaoCadastrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nomeCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cpfCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(emailCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(senhaCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(perfilCampo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botaoCadastrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(nomeCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cpfCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(emailCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(senhaCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(perfilCampo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(nomeText)
+                            .addComponent(textCPF)
+                            .addComponent(textEmail)
+                            .addComponent(textSenha))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(textPerfil)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
+                .addContainerGap(28, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addComponent(nomeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nomeText)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cpfText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textCPF)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cpfCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(emailText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textEmail)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(emailCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(senhaText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(textSenha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(senhaCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(perfilText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textPerfil)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(perfilCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
@@ -200,15 +181,15 @@ public class Cadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoCadastrar;
     private javax.swing.JTextField cpfCampo;
-    private javax.swing.JTextField cpfText;
     private javax.swing.JTextField emailCampo;
-    private javax.swing.JTextField emailText;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField nomeCampo;
-    private javax.swing.JTextField nomeText;
+    private javax.swing.JLabel nomeText;
     private javax.swing.JComboBox<String> perfilCampo;
-    private javax.swing.JTextField perfilText;
     private javax.swing.JTextField senhaCampo;
-    private javax.swing.JTextField senhaText;
+    private javax.swing.JLabel textCPF;
+    private javax.swing.JLabel textEmail;
+    private javax.swing.JLabel textPerfil;
+    private javax.swing.JLabel textSenha;
     // End of variables declaration//GEN-END:variables
 }

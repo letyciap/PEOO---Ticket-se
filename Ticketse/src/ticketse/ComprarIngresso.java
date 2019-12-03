@@ -29,38 +29,31 @@ public class ComprarIngresso extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollBar1 = new javax.swing.JScrollBar();
-        textTitulo = new javax.swing.JTextField();
         quadradoEvento = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         descricao = new javax.swing.JLabel();
-        textoData = new javax.swing.JTextField();
         data = new javax.swing.JLabel();
-        textoHora = new javax.swing.JTextField();
         hora = new javax.swing.JLabel();
-        textoLocal = new javax.swing.JTextField();
         local = new javax.swing.JLabel();
         preço = new javax.swing.JLabel();
-        textTotalIngressos = new javax.swing.JTextField();
+        textData = new javax.swing.JLabel();
+        textHora = new javax.swing.JLabel();
+        textLocal = new javax.swing.JLabel();
         caixaQntd = new javax.swing.JComboBox();
         quadradoIngresso1 = new javax.swing.JPanel();
         tituloIngresso = new javax.swing.JLabel();
         preçoIngresso = new javax.swing.JLabel();
-        textNomeIngresso = new javax.swing.JTextField();
-        textEmailIngresso = new javax.swing.JTextField();
-        textCpfIngresso = new javax.swing.JTextField();
         nomeCampo = new javax.swing.JTextField();
         emailCampo = new javax.swing.JTextField();
         cpfCampo = new javax.swing.JTextField();
+        textNome1 = new javax.swing.JLabel();
+        textEmail1 = new javax.swing.JLabel();
+        textCpf1 = new javax.swing.JLabel();
         pagarBotao = new javax.swing.JButton();
+        textTotalIngressos = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        textTitulo.setBackground(new java.awt.Color(240, 240, 240));
-        textTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        textTitulo.setForeground(new java.awt.Color(0, 32, 144));
-        textTitulo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textTitulo.setText("COMPRAR INGRESSO");
-        textTitulo.setBorder(null);
 
         quadradoEvento.setBackground(new java.awt.Color(255, 255, 255));
         quadradoEvento.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
@@ -72,31 +65,13 @@ public class ComprarIngresso extends javax.swing.JDialog {
         descricao.setForeground(new java.awt.Color(150, 149, 149));
         descricao.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
 
-        textoData.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoData.setForeground(new java.awt.Color(115, 115, 115));
-        textoData.setText("Data:");
-        textoData.setBorder(null);
-        textoData.setOpaque(false);
-
         data.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data.setForeground(new java.awt.Color(115, 115, 115));
         data.setText("31/02/2019");
 
-        textoHora.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoHora.setForeground(new java.awt.Color(115, 115, 115));
-        textoHora.setText("Hora:");
-        textoHora.setBorder(null);
-        textoHora.setOpaque(false);
-
         hora.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora.setForeground(new java.awt.Color(115, 115, 115));
         hora.setText("25h");
-
-        textoLocal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        textoLocal.setForeground(new java.awt.Color(115, 115, 115));
-        textoLocal.setText("Local:");
-        textoLocal.setBorder(null);
-        textoLocal.setOpaque(false);
 
         local.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         local.setForeground(new java.awt.Color(115, 115, 115));
@@ -106,6 +81,18 @@ public class ComprarIngresso extends javax.swing.JDialog {
         preço.setForeground(new java.awt.Color(0, 32, 144));
         preço.setText("jLabel1");
 
+        textData.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textData.setForeground(new java.awt.Color(115, 115, 115));
+        textData.setText("Data:");
+
+        textHora.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textHora.setForeground(new java.awt.Color(115, 115, 115));
+        textHora.setText("Hora:");
+
+        textLocal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textLocal.setForeground(new java.awt.Color(115, 115, 115));
+        textLocal.setText("Local:");
+
         javax.swing.GroupLayout quadradoEventoLayout = new javax.swing.GroupLayout(quadradoEvento);
         quadradoEvento.setLayout(quadradoEventoLayout);
         quadradoEventoLayout.setHorizontalGroup(
@@ -114,24 +101,24 @@ public class ComprarIngresso extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(quadradoEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(quadradoEventoLayout.createSequentialGroup()
-                        .addComponent(textoData, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(textData)
+                        .addGap(11, 11, 11)
                         .addComponent(data)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(textoHora, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)
+                        .addComponent(textHora)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(hora)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(textoLocal, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(textLocal)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(local)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(preço))
                     .addGroup(quadradoEventoLayout.createSequentialGroup()
                         .addGroup(quadradoEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(titulo)
-                            .addComponent(descricao, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 20, Short.MAX_VALUE)))
+                            .addComponent(descricao, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(titulo))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         quadradoEventoLayout.setVerticalGroup(
@@ -147,25 +134,15 @@ public class ComprarIngresso extends javax.swing.JDialog {
                         .addGroup(quadradoEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(data)
                             .addComponent(hora)
-                            .addComponent(textoHora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(local)
-                            .addComponent(textoLocal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textoData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(textData)
+                            .addComponent(textHora)
+                            .addComponent(textLocal))
                         .addGap(7, 7, 7))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quadradoEventoLayout.createSequentialGroup()
                         .addComponent(preço)
                         .addContainerGap())))
         );
-
-        textTotalIngressos.setBackground(new java.awt.Color(240, 240, 240));
-        textTotalIngressos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        textTotalIngressos.setText("Total de Ingressos:");
-        textTotalIngressos.setBorder(null);
-        textTotalIngressos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textTotalIngressosActionPerformed(evt);
-            }
-        });
 
         caixaQntd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         caixaQntd.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione uma quantidade", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
@@ -181,26 +158,23 @@ public class ComprarIngresso extends javax.swing.JDialog {
         preçoIngresso.setForeground(new java.awt.Color(0, 32, 144));
         preçoIngresso.setText("jLabel1");
 
-        textNomeIngresso.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        textNomeIngresso.setForeground(new java.awt.Color(0, 32, 144));
-        textNomeIngresso.setText("Nome");
-        textNomeIngresso.setBorder(null);
-
-        textEmailIngresso.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        textEmailIngresso.setForeground(new java.awt.Color(0, 32, 144));
-        textEmailIngresso.setText("E-mail");
-        textEmailIngresso.setBorder(null);
-
-        textCpfIngresso.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        textCpfIngresso.setForeground(new java.awt.Color(0, 32, 144));
-        textCpfIngresso.setText("CPF");
-        textCpfIngresso.setBorder(null);
-
         nomeCampo.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
 
         emailCampo.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
 
         cpfCampo.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+
+        textNome1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        textNome1.setForeground(new java.awt.Color(0, 32, 144));
+        textNome1.setText("Nome:");
+
+        textEmail1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        textEmail1.setForeground(new java.awt.Color(0, 32, 144));
+        textEmail1.setText("E-mail:");
+
+        textCpf1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        textCpf1.setForeground(new java.awt.Color(0, 32, 144));
+        textCpf1.setText("CPF:");
 
         javax.swing.GroupLayout quadradoIngresso1Layout = new javax.swing.GroupLayout(quadradoIngresso1);
         quadradoIngresso1.setLayout(quadradoIngresso1Layout);
@@ -208,24 +182,22 @@ public class ComprarIngresso extends javax.swing.JDialog {
             quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(quadradoIngresso1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(quadradoIngresso1Layout.createSequentialGroup()
+                            .addComponent(textCpf1)
+                            .addGap(20, 20, 20)
+                            .addComponent(cpfCampo))
+                        .addComponent(tituloIngresso)
+                        .addGroup(quadradoIngresso1Layout.createSequentialGroup()
+                            .addComponent(textNome1)
+                            .addGap(8, 8, 8)
+                            .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(quadradoIngresso1Layout.createSequentialGroup()
-                        .addComponent(textCpfIngresso, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cpfCampo))
-                    .addGroup(quadradoIngresso1Layout.createSequentialGroup()
-                        .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(textEmailIngresso)
-                            .addComponent(textNomeIngresso))
-                        .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(quadradoIngresso1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quadradoIngresso1Layout.createSequentialGroup()
-                                .addGap(11, 11, 11)
-                                .addComponent(emailCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(tituloIngresso))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(textEmail1)
+                        .addGap(6, 6, 6)
+                        .addComponent(emailCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addComponent(preçoIngresso)
                 .addContainerGap())
         );
@@ -236,17 +208,17 @@ public class ComprarIngresso extends javax.swing.JDialog {
                 .addComponent(tituloIngresso)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textNomeIngresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textNome1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textEmailIngresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(emailCampo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(emailCampo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textEmail1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(quadradoIngresso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textCpfIngresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cpfCampo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(preçoIngresso))
+                    .addComponent(preçoIngresso)
+                    .addComponent(textCpf1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -260,6 +232,14 @@ public class ComprarIngresso extends javax.swing.JDialog {
             }
         });
 
+        textTotalIngressos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        textTotalIngressos.setText("Total de ingressos:");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 32, 144));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("COMPRAR INGRESSO");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -267,29 +247,29 @@ public class ComprarIngresso extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(19, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(textTotalIngressos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoIngresso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(textTitulo)
-                            .addComponent(caixaQntd, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(quadradoEvento, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(pagarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(19, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(textTotalIngressos)
+                            .addComponent(quadradoIngresso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(caixaQntd, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(quadradoEvento, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addGap(15, 15, 15)
                 .addComponent(quadradoEvento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(textTotalIngressos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textTotalIngressos, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(caixaQntd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
@@ -302,10 +282,6 @@ public class ComprarIngresso extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void textTotalIngressosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textTotalIngressosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textTotalIngressosActionPerformed
 
     private void pagarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagarBotaoActionPerformed
         // TODO add your handling code here:
@@ -360,6 +336,7 @@ public class ComprarIngresso extends javax.swing.JDialog {
     private javax.swing.JLabel descricao;
     private javax.swing.JTextField emailCampo;
     private javax.swing.JLabel hora;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JLabel local;
     private javax.swing.JTextField nomeCampo;
@@ -368,14 +345,13 @@ public class ComprarIngresso extends javax.swing.JDialog {
     private javax.swing.JLabel preçoIngresso;
     private javax.swing.JPanel quadradoEvento;
     private javax.swing.JPanel quadradoIngresso1;
-    private javax.swing.JTextField textCpfIngresso;
-    private javax.swing.JTextField textEmailIngresso;
-    private javax.swing.JTextField textNomeIngresso;
-    private javax.swing.JTextField textTitulo;
-    private javax.swing.JTextField textTotalIngressos;
-    private javax.swing.JTextField textoData;
-    private javax.swing.JTextField textoHora;
-    private javax.swing.JTextField textoLocal;
+    private javax.swing.JLabel textCpf1;
+    private javax.swing.JLabel textData;
+    private javax.swing.JLabel textEmail1;
+    private javax.swing.JLabel textHora;
+    private javax.swing.JLabel textLocal;
+    private javax.swing.JLabel textNome1;
+    private javax.swing.JLabel textTotalIngressos;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel tituloIngresso;
     // End of variables declaration//GEN-END:variables
