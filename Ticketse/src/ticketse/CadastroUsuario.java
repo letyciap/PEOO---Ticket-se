@@ -38,7 +38,7 @@ public class CadastroUsuario extends javax.swing.JDialog {
         senhaText = new javax.swing.JTextField();
         senhaCampo = new javax.swing.JTextField();
         perfilText = new javax.swing.JTextField();
-        perfilCampo = new javax.swing.JComboBox<>();
+        perfilCampo = new javax.swing.JComboBox<String>();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -82,7 +82,12 @@ public class CadastroUsuario extends javax.swing.JDialog {
         perfilText.setBorder(null);
         perfilText.setOpaque(false);
 
-        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        perfilCampo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                perfilCampoActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(71, 94, 176));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -159,6 +164,10 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void perfilCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_perfilCampoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_perfilCampoActionPerformed
 
     /**
      * @param args the command line arguments

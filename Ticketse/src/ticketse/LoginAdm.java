@@ -5,18 +5,25 @@
  */
 package ticketse;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author glori
  */
 public class LoginAdm extends javax.swing.JDialog {
-
+     public String[] chaveDeAcesso = new String[80];
+     public String[] senha = new String[80];
+     
+     public int login = 0;
+     
     /**
      * Creates new form LoginUsuario
      */
     public LoginAdm(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
     }
 
     /**
@@ -32,9 +39,9 @@ public class LoginAdm extends javax.swing.JDialog {
         chaveDeAcessoText = new javax.swing.JLabel();
         chaveDeAcessoCampo = new javax.swing.JTextField();
         senhaText = new javax.swing.JLabel();
-        senhaCampo = new javax.swing.JTextField();
         esqueciSenhaBotao = new javax.swing.JButton();
         entrarBotao = new javax.swing.JButton();
+        senhaCampo = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -43,20 +50,15 @@ public class LoginAdm extends javax.swing.JDialog {
 
         chaveDeAcessoText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         chaveDeAcessoText.setText("Chave de Acesso:");
+        chaveDeAcessoText.setDoubleBuffered(true);
+        chaveDeAcessoText.setFocusCycleRoot(true);
+        chaveDeAcessoText.setFocusTraversalPolicyProvider(true);
 
         chaveDeAcessoCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         chaveDeAcessoCampo.setMinimumSize(new java.awt.Dimension(6, 27));
 
         senhaText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         senhaText.setText("Senha:");
-
-        senhaCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaCampo.setMinimumSize(new java.awt.Dimension(6, 27));
-        senhaCampo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senhaCampoActionPerformed(evt);
-            }
-        });
 
         esqueciSenhaBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         esqueciSenhaBotao.setText("Esqueci minha senha.");
@@ -68,6 +70,17 @@ public class LoginAdm extends javax.swing.JDialog {
         entrarBotao.setForeground(new java.awt.Color(255, 255, 255));
         entrarBotao.setText("ENTRAR");
         entrarBotao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        entrarBotao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                entrarBotaoActionPerformed(evt);
+            }
+        });
+
+        senhaCampo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                senhaCampoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,15 +88,14 @@ public class LoginAdm extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(83, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(esqueciSenhaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(esqueciSenhaBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
                     .addComponent(senhaText)
                     .addComponent(chaveDeAcessoText)
-                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(senhaCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                        .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(senhaCampo)
+                    .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -97,9 +109,9 @@ public class LoginAdm extends javax.swing.JDialog {
                 .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(senhaText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(1, 1, 1)
                 .addComponent(senhaCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(esqueciSenhaBotao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(entrarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -108,6 +120,23 @@ public class LoginAdm extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void entrarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarBotaoActionPerformed
+        chaveDeAcesso [login] = chaveDeAcessoCampo.getText();
+        senha[login] = senhaCampo.getText();
+
+        if(chaveDeAcessoCampo.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE CHAVE DE ACESSO!");
+        }
+        
+        if(senhaCampo.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE SENHA!");
+        }
+        MeusEventos meuseventos = new MeusEventos (new javax.swing.JFrame(), true);
+        meuseventos.setVisible(true);
+        
+        login++;
+    }//GEN-LAST:event_entrarBotaoActionPerformed
 
     private void senhaCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaCampoActionPerformed
         // TODO add your handling code here:
@@ -164,7 +193,7 @@ public class LoginAdm extends javax.swing.JDialog {
     private javax.swing.JButton entrarBotao;
     private javax.swing.JButton esqueciSenhaBotao;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField senhaCampo;
+    private javax.swing.JPasswordField senhaCampo;
     private javax.swing.JLabel senhaText;
     // End of variables declaration//GEN-END:variables
 }

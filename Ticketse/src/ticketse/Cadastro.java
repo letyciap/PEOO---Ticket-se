@@ -5,7 +5,6 @@
  */
 package ticketse;
 
-import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
