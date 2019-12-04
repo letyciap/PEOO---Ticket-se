@@ -254,7 +254,7 @@ public class MeusEventos extends javax.swing.JDialog {
         local2.setText("Casa");
 
         opcoesBotao2.setBackground(new java.awt.Color(255, 255, 255));
-        opcoesBotao2.setIcon(new javax.swing.ImageIcon("C:\\Users\\glori\\Downloads\\Pontinhos.png")); // NOI18N
+        opcoesBotao2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
 
         ingressosVendidos2.setFont(new java.awt.Font("Tahoma", 0, 32)); // NOI18N
         ingressosVendidos2.setForeground(new java.awt.Color(0, 32, 144));
@@ -348,7 +348,7 @@ public class MeusEventos extends javax.swing.JDialog {
         jLabel37.setText("A descrição do negócio aqui neste coisa...");
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\glori\\Downloads\\Pontinhos.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
 
         textCategoria3.setForeground(new java.awt.Color(108, 104, 104));
         textCategoria3.setText("Categoria:");
@@ -463,23 +463,24 @@ public class MeusEventos extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(textBuscar)
-                    .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(campoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(textTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(campoPesquisa, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buscarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addComponent(buscarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
+                .addComponent(textTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(textBuscar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

@@ -5,17 +5,28 @@
  */
 package ticketse;
 
+import java.util.Random;
+import javax.swing.JLabel;
+
 /**
  *
  * @author 20181041110020
  */
 public class ChaveDeAcesso extends javax.swing.JDialog {
-
-    /**
-     * Creates new form NewJDialog
-     */
+    
+    public int[] chave = new int[80];
+    
     public ChaveDeAcesso(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        chaveDeAcesso = new JLabel();
+        
+        //Random gerador = new Random();
+        //contaCadastro = Cadastro.contaCadastro;
+        
+        //for (int i = 0; i < 10; i++) {
+            //chaveDeAcesso[contaCadastro-1] = gerador.nextInt();
+        //}
+        
         initComponents();
     }
 
@@ -46,7 +57,6 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
         chaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         chaveDeAcesso.setForeground(new java.awt.Color(0, 32, 144));
         chaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        chaveDeAcesso.setText("120323");
 
         textChaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textChaveDeAcesso.setForeground(new java.awt.Color(82, 77, 77));
