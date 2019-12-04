@@ -471,6 +471,7 @@ public class Ticketse extends javax.swing.JFrame {
 
     private void comprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar1ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_comprar1ActionPerformed
 
     private void comprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar2ActionPerformed

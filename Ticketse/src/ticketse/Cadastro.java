@@ -5,6 +5,15 @@
  */
 package ticketse;
 
+import java.awt.Container;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author 20181041110020
@@ -14,8 +23,42 @@ public class Cadastro extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
+    public class TelaCadastro extends JFrame {
+	
+	private JTextField nomeCampo;
+	private JTextField cpfCampo;
+	private JTextField emailCampo;
+	private JTextField senhaCampo;
+        
+        private JLabel logo;
+        private JLabel textNome;
+        private JLabel textCPF;
+        private JLabel textEmail;
+        private JLabel textSenha;
+        private JLabel textPerfil;
+        
+        private JComboBox perfilCampo;
+        
+        private JButton botaoCadastrar;
+    }
+    
     public Cadastro() {
         initComponents();
+    }
+    
+    public Cadastro(String titulo){
+        super(titulo);
+        
+        nomeCampo = new JTextField();
+        cpfCampo = new JTextField();
+        emailCampo = new JTextField();
+        senhaCampo = new JTextField();
+        
+        textNome = new JLabel("Nome:");
+        textCPF = new JLabel("CPF:");
+        textEmail = new JLabel("E-mail:");
+        textSenha = new JLabel("Senha:");
+        textPerfil = new JLabel("Perfil:");
     }
 
     /**
@@ -28,7 +71,7 @@ public class Cadastro extends javax.swing.JFrame {
     private void initComponents() {
 
         logo = new javax.swing.JLabel();
-        nomeText = new javax.swing.JLabel();
+        textNome = new javax.swing.JLabel();
         nomeCampo = new javax.swing.JTextField();
         textCPF = new javax.swing.JLabel();
         cpfCampo = new javax.swing.JTextField();
@@ -44,8 +87,8 @@ public class Cadastro extends javax.swing.JFrame {
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
 
-        nomeText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        nomeText.setText("Nome");
+        textNome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        textNome.setText("Nome");
 
         nomeCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nomeCampo.setMinimumSize(new java.awt.Dimension(6, 27));
@@ -71,7 +114,6 @@ public class Cadastro extends javax.swing.JFrame {
         textPerfil.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         textPerfil.setText("Perfil");
 
-        perfilCampo.setEditable(true);
         perfilCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         perfilCampo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
 
@@ -104,7 +146,7 @@ public class Cadastro extends javax.swing.JFrame {
                     .addComponent(perfilCampo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nomeText)
+                            .addComponent(textNome)
                             .addComponent(textCPF)
                             .addComponent(textEmail)
                             .addComponent(textSenha))
@@ -120,7 +162,7 @@ public class Cadastro extends javax.swing.JFrame {
                 .addContainerGap(28, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addComponent(nomeText)
+                .addComponent(textNome)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -200,11 +242,11 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JTextField emailCampo;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField nomeCampo;
-    private javax.swing.JLabel nomeText;
     private javax.swing.JComboBox<String> perfilCampo;
     private javax.swing.JTextField senhaCampo;
     private javax.swing.JLabel textCPF;
     private javax.swing.JLabel textEmail;
+    private javax.swing.JLabel textNome;
     private javax.swing.JLabel textPerfil;
     private javax.swing.JLabel textSenha;
     // End of variables declaration//GEN-END:variables
