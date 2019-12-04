@@ -45,6 +45,11 @@ public class PosLoginU extends javax.swing.JDialog {
         botaoEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         botaoEntrar.setForeground(new java.awt.Color(255, 255, 255));
         botaoEntrar.setText("ENTRAR");
+        botaoEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoEntrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,6 +80,11 @@ public class PosLoginU extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
+        LoginUsuario loginusuario = new LoginUsuario(new javax.swing.JFrame(), true);
+        loginusuario.setVisible(true);
+    }//GEN-LAST:event_botaoEntrarActionPerformed
 
     /**
      * @param args the command line arguments

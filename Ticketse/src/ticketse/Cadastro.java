@@ -37,7 +37,7 @@ public class Cadastro extends javax.swing.JFrame {
         textSenha = new javax.swing.JLabel();
         senhaCampo = new javax.swing.JTextField();
         textPerfil = new javax.swing.JLabel();
-        perfilCampo = new javax.swing.JComboBox<String>();
+        perfilCampo = new javax.swing.JComboBox<>();
         botaoCadastrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -73,12 +73,17 @@ public class Cadastro extends javax.swing.JFrame {
 
         perfilCampo.setEditable(true);
         perfilCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
+        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
 
         botaoCadastrar.setBackground(new java.awt.Color(71, 94, 176));
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         botaoCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         botaoCadastrar.setText("CADASTRAR");
+        botaoCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCadastrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -141,6 +146,17 @@ public class Cadastro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
+        String perfil = perfilCampo.getActionCommand();
+        if (perfil.equalsIgnoreCase("Usuário")) {
+            PosLoginU poslogin = new PosLoginU(new javax.swing.JFrame(), true);
+            poslogin.setVisible(true);
+        }else if (perfil.equalsIgnoreCase("Administrador")) {
+            LoginAdm loginadm = new LoginAdm(new javax.swing.JFrame(), true);
+            loginadm.setVisible(true);
+        }
+    }//GEN-LAST:event_botaoCadastrarActionPerformed
 
     /**
      * @param args the command line arguments

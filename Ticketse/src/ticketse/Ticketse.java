@@ -123,7 +123,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         descricao1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         descricao1.setForeground(new java.awt.Color(150, 149, 149));
-        descricao1.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
+        descricao1.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
         comprar1.setBackground(new java.awt.Color(71, 94, 176));
         comprar1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
@@ -144,7 +144,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         data1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data1.setForeground(new java.awt.Color(115, 115, 115));
-        data1.setText("31/02/2019");
+        data1.setText("04/12/2019");
 
         textHora1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textHora1.setForeground(new java.awt.Color(115, 115, 115));
@@ -152,7 +152,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         hora1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora1.setForeground(new java.awt.Color(115, 115, 115));
-        hora1.setText("25h");
+        hora1.setText("7h");
 
         textLocal1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textLocal1.setForeground(new java.awt.Color(115, 115, 115));
@@ -219,7 +219,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         descricao2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         descricao2.setForeground(new java.awt.Color(150, 149, 149));
-        descricao2.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
+        descricao2.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
         comprar2.setBackground(new java.awt.Color(71, 94, 176));
         comprar2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
@@ -240,7 +240,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         data2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data2.setForeground(new java.awt.Color(115, 115, 115));
-        data2.setText("31/02/2019");
+        data2.setText("04/12/2019");
 
         textHora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textHora2.setForeground(new java.awt.Color(115, 115, 115));
@@ -248,7 +248,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         hora2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora2.setForeground(new java.awt.Color(115, 115, 115));
-        hora2.setText("25h");
+        hora2.setText("7h");
 
         textLocal2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textLocal2.setForeground(new java.awt.Color(115, 115, 115));
@@ -315,7 +315,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         descricao3.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         descricao3.setForeground(new java.awt.Color(150, 149, 149));
-        descricao3.setText("A descrição do negócio aqui neste quadrado de texto enorme com um texto enorme.");
+        descricao3.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
         comprar3.setBackground(new java.awt.Color(71, 94, 176));
         comprar3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
@@ -336,7 +336,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         data3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         data3.setForeground(new java.awt.Color(115, 115, 115));
-        data3.setText("31/02/2019");
+        data3.setText("04/12/2019");
 
         textHora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textHora3.setForeground(new java.awt.Color(115, 115, 115));
@@ -344,7 +344,7 @@ public class Ticketse extends javax.swing.JFrame {
 
         hora3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hora3.setForeground(new java.awt.Color(115, 115, 115));
-        hora3.setText("25h");
+        hora3.setText("7h");
 
         textLocal3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textLocal3.setForeground(new java.awt.Color(115, 115, 115));

@@ -291,7 +291,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="95" green="95" red="96" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do neg&#xf3;cio aqui neste quadrado de texto enorme com um texto enorme."/>
+            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do evento &#xe9; apresentada neste campo de texto, aqui o interessado  pode"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="comprar1">
@@ -341,7 +341,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="31/02/2019"/>
+            <Property name="text" type="java.lang.String" value="04/12/2019"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textHora1">
@@ -363,7 +363,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="25h"/>
+            <Property name="text" type="java.lang.String" value="7h"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textLocal1">
@@ -480,7 +480,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="95" green="95" red="96" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do neg&#xf3;cio aqui neste quadrado de texto enorme com um texto enorme."/>
+            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do evento &#xe9; apresentada neste campo de texto, aqui o interessado  pode"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="comprar2">
@@ -530,7 +530,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="31/02/2019"/>
+            <Property name="text" type="java.lang.String" value="04/12/2019"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textHora2">
@@ -552,7 +552,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="25h"/>
+            <Property name="text" type="java.lang.String" value="7h"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textLocal2">
@@ -669,7 +669,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="95" green="95" red="96" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do neg&#xf3;cio aqui neste quadrado de texto enorme com um texto enorme."/>
+            <Property name="text" type="java.lang.String" value="A descri&#xe7;&#xe3;o do evento &#xe9; apresentada neste campo de texto, aqui o interessado  pode"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="comprar3">
@@ -719,7 +719,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="31/02/2019"/>
+            <Property name="text" type="java.lang.String" value="04/12/2019"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textHora3">
@@ -741,7 +741,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="73" green="73" red="73" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="25h"/>
+            <Property name="text" type="java.lang.String" value="7h"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="textLocal3">
