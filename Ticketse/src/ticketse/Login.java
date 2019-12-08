@@ -119,11 +119,14 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoAdmActionPerformed
 
     private void botaoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoUsuarioActionPerformed
+        // TODO add your handling code here:
+        
         LoginUsuario loginU = new LoginUsuario(this, false);
         loginU.setVisible(true);
     }//GEN-LAST:event_botaoUsuarioActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
+        // TODO add your handling code here:
         Cadastro cadastro = new Cadastro();
         cadastro.setVisible(true);
     }//GEN-LAST:event_botaoCadastrarActionPerformed

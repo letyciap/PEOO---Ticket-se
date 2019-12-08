@@ -25,14 +25,15 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace pref="83" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="esqueciSenhaBotao" alignment="0" pref="214" max="32767" attributes="0"/>
-                  <Component id="senhaText" min="-2" max="-2" attributes="0"/>
-                  <Component id="chaveDeAcessoText" min="-2" max="-2" attributes="0"/>
-                  <Component id="logo" alignment="0" pref="214" max="32767" attributes="0"/>
-                  <Component id="entrarBotao" pref="214" max="32767" attributes="0"/>
-                  <Component id="senhaCampo" alignment="0" max="32767" attributes="0"/>
-                  <Component id="chaveDeAcessoCampo" alignment="1" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="senhaCampo" max="32767" attributes="0"/>
+                  <Component id="senhaText" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="chaveDeAcessoText" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="logo" alignment="1" pref="214" max="32767" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="entrarBotao" alignment="0" pref="214" max="32767" attributes="0"/>
+                      <Component id="chaveDeAcessoCampo" alignment="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="83" max="32767" attributes="0"/>
           </Group>
@@ -41,21 +42,19 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="logo" min="-2" pref="38" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Component id="chaveDeAcessoText" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="chaveDeAcessoCampo" min="-2" pref="29" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="senhaText" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-              <Component id="senhaCampo" min="-2" pref="29" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-              <Component id="esqueciSenhaBotao" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="senhaCampo" min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="entrarBotao" min="-2" pref="31" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -75,9 +74,6 @@
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Chave de Acesso:"/>
-        <Property name="doubleBuffered" type="boolean" value="true"/>
-        <Property name="focusCycleRoot" type="boolean" value="true"/>
-        <Property name="focusTraversalPolicyProvider" type="boolean" value="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="chaveDeAcessoCampo">
@@ -89,6 +85,9 @@
           <Dimension value="[6, 27]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chaveDeAcessoCampoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="senhaText">
       <Properties>
@@ -96,18 +95,6 @@
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Senha:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="esqueciSenhaBotao">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Esqueci minha senha."/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="null"/>
-        </Property>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="entrarBotao">

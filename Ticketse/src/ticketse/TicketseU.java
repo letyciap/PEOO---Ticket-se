@@ -1,11 +1,11 @@
 package ticketse;
 
-public class Ticketse extends javax.swing.JFrame {
+public class TicketseU extends javax.swing.JFrame {
 
     /**
      * Creates new form Ticketse
      */
-    public Ticketse() {
+    public TicketseU() {
         initComponents();
     }
 
@@ -22,42 +22,38 @@ public class Ticketse extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
         barraderolagem = new javax.swing.JScrollBar();
         logo = new javax.swing.JLabel();
-        botaoCadastrar = new javax.swing.JButton();
         campoDePesquisa = new javax.swing.JTextField();
         botaoBuscar = new javax.swing.JButton();
         quadradoEvento1 = new javax.swing.JPanel();
         titulo1 = new javax.swing.JLabel();
         descricao1 = new javax.swing.JLabel();
-        excluir1 = new javax.swing.JButton();
+        comprar1 = new javax.swing.JButton();
         textData1 = new javax.swing.JLabel();
         data1 = new javax.swing.JLabel();
         textHora1 = new javax.swing.JLabel();
         hora1 = new javax.swing.JLabel();
         textLocal1 = new javax.swing.JLabel();
         local1 = new javax.swing.JLabel();
-        editar1 = new javax.swing.JButton();
         quadradoEvento2 = new javax.swing.JPanel();
         titulo2 = new javax.swing.JLabel();
         descricao2 = new javax.swing.JLabel();
-        excluir2 = new javax.swing.JButton();
+        comprar2 = new javax.swing.JButton();
         textData2 = new javax.swing.JLabel();
         data2 = new javax.swing.JLabel();
         textHora2 = new javax.swing.JLabel();
         hora2 = new javax.swing.JLabel();
         textLocal2 = new javax.swing.JLabel();
         local2 = new javax.swing.JLabel();
-        editar2 = new javax.swing.JButton();
         quadradoEvento3 = new javax.swing.JPanel();
         titulo3 = new javax.swing.JLabel();
         descricao3 = new javax.swing.JLabel();
-        excluir3 = new javax.swing.JButton();
+        comprar3 = new javax.swing.JButton();
         textData3 = new javax.swing.JLabel();
         data3 = new javax.swing.JLabel();
         textHora3 = new javax.swing.JLabel();
         hora3 = new javax.swing.JLabel();
         textLocal3 = new javax.swing.JLabel();
         local3 = new javax.swing.JLabel();
-        editar3 = new javax.swing.JButton();
         botaoSair = new javax.swing.JButton();
 
         jToggleButton1.setText("jToggleButton1");
@@ -69,18 +65,6 @@ public class Ticketse extends javax.swing.JFrame {
         barraderolagem.setForeground(new java.awt.Color(149, 170, 247));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/LOGO.png"))); // NOI18N
-
-        botaoCadastrar.setBackground(new java.awt.Color(255, 255, 255));
-        botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        botaoCadastrar.setForeground(new java.awt.Color(0, 32, 144));
-        botaoCadastrar.setText("Novo Evento");
-        botaoCadastrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        botaoCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botaoCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoCadastrarActionPerformed(evt);
-            }
-        });
 
         campoDePesquisa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
         campoDePesquisa.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -107,16 +91,16 @@ public class Ticketse extends javax.swing.JFrame {
         descricao1.setForeground(new java.awt.Color(150, 149, 149));
         descricao1.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
-        excluir1.setBackground(new java.awt.Color(71, 94, 176));
-        excluir1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        excluir1.setForeground(new java.awt.Color(255, 255, 255));
-        excluir1.setText("Excluir");
-        excluir1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        excluir1.setBorderPainted(false);
-        excluir1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        excluir1.addActionListener(new java.awt.event.ActionListener() {
+        comprar1.setBackground(new java.awt.Color(71, 94, 176));
+        comprar1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        comprar1.setForeground(new java.awt.Color(255, 255, 255));
+        comprar1.setText("Comprar");
+        comprar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        comprar1.setBorderPainted(false);
+        comprar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comprar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                excluir1ActionPerformed(evt);
+                comprar1ActionPerformed(evt);
             }
         });
 
@@ -144,19 +128,6 @@ public class Ticketse extends javax.swing.JFrame {
         local1.setForeground(new java.awt.Color(115, 115, 115));
         local1.setText("Casa");
 
-        editar1.setBackground(new java.awt.Color(71, 94, 176));
-        editar1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        editar1.setForeground(new java.awt.Color(255, 255, 255));
-        editar1.setText("Editar");
-        editar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        editar1.setBorderPainted(false);
-        editar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        editar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editar1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout quadradoEvento1Layout = new javax.swing.GroupLayout(quadradoEvento1);
         quadradoEvento1.setLayout(quadradoEvento1Layout);
         quadradoEvento1Layout.setHorizontalGroup(
@@ -166,11 +137,8 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(quadradoEvento1Layout.createSequentialGroup()
                         .addComponent(titulo1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(editar1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 305, Short.MAX_VALUE)
+                        .addComponent(comprar1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento1Layout.createSequentialGroup()
                         .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(quadradoEvento1Layout.createSequentialGroup()
@@ -186,16 +154,16 @@ public class Ticketse extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(local1))
                             .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(34, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         quadradoEvento1Layout.setVerticalGroup(
             quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(quadradoEvento1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(11, 11, 11)
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titulo1)
-                    .addComponent(editar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comprar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titulo1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -219,16 +187,16 @@ public class Ticketse extends javax.swing.JFrame {
         descricao2.setForeground(new java.awt.Color(150, 149, 149));
         descricao2.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
-        excluir2.setBackground(new java.awt.Color(71, 94, 176));
-        excluir2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        excluir2.setForeground(new java.awt.Color(255, 255, 255));
-        excluir2.setText("Excluir");
-        excluir2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        excluir2.setBorderPainted(false);
-        excluir2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        excluir2.addActionListener(new java.awt.event.ActionListener() {
+        comprar2.setBackground(new java.awt.Color(71, 94, 176));
+        comprar2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        comprar2.setForeground(new java.awt.Color(255, 255, 255));
+        comprar2.setText("Comprar");
+        comprar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        comprar2.setBorderPainted(false);
+        comprar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comprar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                excluir2ActionPerformed(evt);
+                comprar2ActionPerformed(evt);
             }
         });
 
@@ -256,19 +224,6 @@ public class Ticketse extends javax.swing.JFrame {
         local2.setForeground(new java.awt.Color(115, 115, 115));
         local2.setText("Casa");
 
-        editar2.setBackground(new java.awt.Color(71, 94, 176));
-        editar2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        editar2.setForeground(new java.awt.Color(255, 255, 255));
-        editar2.setText("Editar");
-        editar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        editar2.setBorderPainted(false);
-        editar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        editar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editar2ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout quadradoEvento2Layout = new javax.swing.GroupLayout(quadradoEvento2);
         quadradoEvento2.setLayout(quadradoEvento2Layout);
         quadradoEvento2Layout.setHorizontalGroup(
@@ -279,9 +234,7 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento2Layout.createSequentialGroup()
                         .addComponent(titulo2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(editar2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(excluir2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento2Layout.createSequentialGroup()
                         .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -305,9 +258,8 @@ public class Ticketse extends javax.swing.JFrame {
             .addGroup(quadradoEvento2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(excluir2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titulo2)
-                    .addComponent(editar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comprar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titulo2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -331,16 +283,16 @@ public class Ticketse extends javax.swing.JFrame {
         descricao3.setForeground(new java.awt.Color(150, 149, 149));
         descricao3.setText("A descrição do evento é apresentada neste campo de texto, aqui o interessado  pode");
 
-        excluir3.setBackground(new java.awt.Color(71, 94, 176));
-        excluir3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        excluir3.setForeground(new java.awt.Color(255, 255, 255));
-        excluir3.setText("Excluir");
-        excluir3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        excluir3.setBorderPainted(false);
-        excluir3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        excluir3.addActionListener(new java.awt.event.ActionListener() {
+        comprar3.setBackground(new java.awt.Color(71, 94, 176));
+        comprar3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        comprar3.setForeground(new java.awt.Color(255, 255, 255));
+        comprar3.setText("Comprar");
+        comprar3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        comprar3.setBorderPainted(false);
+        comprar3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comprar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                excluir3ActionPerformed(evt);
+                comprar3ActionPerformed(evt);
             }
         });
 
@@ -368,19 +320,6 @@ public class Ticketse extends javax.swing.JFrame {
         local3.setForeground(new java.awt.Color(115, 115, 115));
         local3.setText("Casa");
 
-        editar3.setBackground(new java.awt.Color(71, 94, 176));
-        editar3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        editar3.setForeground(new java.awt.Color(255, 255, 255));
-        editar3.setText("Editar");
-        editar3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
-        editar3.setBorderPainted(false);
-        editar3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        editar3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editar3ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout quadradoEvento3Layout = new javax.swing.GroupLayout(quadradoEvento3);
         quadradoEvento3.setLayout(quadradoEvento3Layout);
         quadradoEvento3Layout.setHorizontalGroup(
@@ -391,9 +330,7 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addComponent(titulo3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(editar3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(excluir3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(comprar3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -409,7 +346,7 @@ public class Ticketse extends javax.swing.JFrame {
                                 .addComponent(textLocal3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(local3)))
-                        .addGap(0, 24, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         quadradoEvento3Layout.setVerticalGroup(
@@ -417,9 +354,8 @@ public class Ticketse extends javax.swing.JFrame {
             .addGroup(quadradoEvento3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(excluir3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titulo3)
-                    .addComponent(editar3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comprar3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titulo3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -456,11 +392,8 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(quadradoEvento1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(quadradoEvento3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(logo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(logo, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -477,9 +410,7 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(botaoCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(botaoSair, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(botaoSair, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(campoDePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -497,47 +428,27 @@ public class Ticketse extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
-        gerenciarevento.setVisible(true);
-    }//GEN-LAST:event_botaoCadastrarActionPerformed
-
     private void botaoBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoBuscarActionPerformed
         String busca = campoDePesquisa.getText();
-        
     }//GEN-LAST:event_botaoBuscarActionPerformed
 
-    private void excluir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir2ActionPerformed
-        quadradoEvento2.setVisible(false);
-    }//GEN-LAST:event_excluir2ActionPerformed
+    private void comprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_comprar1ActionPerformed
 
-    private void excluir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir3ActionPerformed
-        quadradoEvento3.setVisible(false);
-    }//GEN-LAST:event_excluir3ActionPerformed
+    private void comprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comprar2ActionPerformed
+
+    private void comprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprar3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comprar3ActionPerformed
 
     private void botaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSairActionPerformed
         Login login = new Login();
         login.setVisible(true);
     }//GEN-LAST:event_botaoSairActionPerformed
-
-    private void excluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir1ActionPerformed
-        quadradoEvento1.setVisible(false);
-    }//GEN-LAST:event_excluir1ActionPerformed
-
-    private void editar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar1ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
-        gerenciarevento.setVisible(true);
-    }//GEN-LAST:event_editar1ActionPerformed
-
-    private void editar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar2ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
-        gerenciarevento.setVisible(true);
-    }//GEN-LAST:event_editar2ActionPerformed
-
-    private void editar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar3ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
-        gerenciarevento.setVisible(true);
-    }//GEN-LAST:event_editar3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -556,20 +467,21 @@ public class Ticketse extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ticketse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketseU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ticketse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketseU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ticketse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketseU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ticketse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketseU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Ticketse().setVisible(true);
+                new TicketseU().setVisible(true);
             }
         });
     }
@@ -577,29 +489,25 @@ public class Ticketse extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollBar barraderolagem;
     private javax.swing.JButton botaoBuscar;
-    public static javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoSair;
     private javax.swing.JTextField campoDePesquisa;
-    public static javax.swing.JLabel data1;
-    public static javax.swing.JLabel data2;
-    public static javax.swing.JLabel data3;
-    public static javax.swing.JLabel descricao1;
-    public static javax.swing.JLabel descricao2;
-    public static javax.swing.JLabel descricao3;
-    private javax.swing.JButton editar1;
-    private javax.swing.JButton editar2;
-    private javax.swing.JButton editar3;
-    private javax.swing.JButton excluir1;
-    public static javax.swing.JButton excluir2;
-    public static javax.swing.JButton excluir3;
-    public static javax.swing.JLabel hora1;
-    public static javax.swing.JLabel hora2;
-    public static javax.swing.JLabel hora3;
+    private javax.swing.JButton comprar1;
+    private javax.swing.JButton comprar2;
+    private javax.swing.JButton comprar3;
+    private javax.swing.JLabel data1;
+    private javax.swing.JLabel data2;
+    private javax.swing.JLabel data3;
+    private javax.swing.JLabel descricao1;
+    private javax.swing.JLabel descricao2;
+    private javax.swing.JLabel descricao3;
+    private javax.swing.JLabel hora1;
+    private javax.swing.JLabel hora2;
+    private javax.swing.JLabel hora3;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JToggleButton jToggleButton1;
-    protected static javax.swing.JLabel local1;
-    public static javax.swing.JLabel local2;
-    public static javax.swing.JLabel local3;
+    private javax.swing.JLabel local1;
+    private javax.swing.JLabel local2;
+    private javax.swing.JLabel local3;
     private javax.swing.JLabel logo;
     public static javax.swing.JPanel quadradoEvento1;
     public static javax.swing.JPanel quadradoEvento2;
@@ -613,8 +521,8 @@ public class Ticketse extends javax.swing.JFrame {
     private javax.swing.JLabel textLocal1;
     private javax.swing.JLabel textLocal2;
     private javax.swing.JLabel textLocal3;
-    public static javax.swing.JLabel titulo1;
-    public static javax.swing.JLabel titulo2;
-    public static javax.swing.JLabel titulo3;
+    private javax.swing.JLabel titulo1;
+    private javax.swing.JLabel titulo2;
+    private javax.swing.JLabel titulo3;
     // End of variables declaration//GEN-END:variables
 }

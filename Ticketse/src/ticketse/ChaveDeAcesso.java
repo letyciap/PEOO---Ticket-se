@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ticketse;
-
 import java.util.Random;
 import javax.swing.JLabel;
 
@@ -14,19 +13,9 @@ import javax.swing.JLabel;
  */
 public class ChaveDeAcesso extends javax.swing.JDialog {
     
-    public int[] chave = new int[80];
-    
     public ChaveDeAcesso(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         chaveDeAcesso = new JLabel();
-        
-        //Random gerador = new Random();
-        //contaCadastro = Cadastro.contaCadastro;
-        
-        //for (int i = 0; i < 10; i++) {
-            //chaveDeAcesso[contaCadastro-1] = gerador.nextInt();
-        //}
-        
         initComponents();
     }
 
@@ -53,11 +42,11 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
         textCadastroRealizado.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         textCadastroRealizado.setForeground(new java.awt.Color(115, 115, 115));
         textCadastroRealizado.setText("Cadastro realizado com sucesso!");
-        textCadastroRealizado.setFocusTraversalPolicyProvider(true);
 
         chaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         chaveDeAcesso.setForeground(new java.awt.Color(0, 32, 144));
         chaveDeAcesso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        chaveDeAcesso.setText("123456");
 
         textChaveDeAcesso.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textChaveDeAcesso.setForeground(new java.awt.Color(82, 77, 77));
@@ -87,8 +76,8 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
                         .addContainerGap(54, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(textChaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(chaveDeAcesso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE))))
+                            .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
+                            .addComponent(chaveDeAcesso, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -115,7 +104,7 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
-        LoginAdm loginadm = new LoginAdm(new javax.swing.JFrame(), true);
+        LoginAdm loginadm = new LoginAdm(new javax.swing.JFrame(), false);
         loginadm.setVisible(true);
     }//GEN-LAST:event_botaoEntrarActionPerformed
 
@@ -164,7 +153,7 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoEntrar;
-    private javax.swing.JLabel chaveDeAcesso;
+    public static javax.swing.JLabel chaveDeAcesso;
     private javax.swing.JLabel logo;
     private javax.swing.JLabel textCadastroRealizado;
     private javax.swing.JLabel textChaveDeAcesso;

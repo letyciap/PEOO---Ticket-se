@@ -10,15 +10,13 @@ package ticketse;
  * @author 20181042060030
  */
 public class MeusEventos extends javax.swing.JDialog {
-
-    /**
-     * Creates new form MeusEventos
-     */
+    
+    
     public MeusEventos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
-
+        
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -80,7 +78,7 @@ public class MeusEventos extends javax.swing.JDialog {
 
         textTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         textTitulo.setForeground(new java.awt.Color(0, 32, 144));
-        textTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        textTitulo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         textTitulo.setText("MEUS EVENTOS");
 
         textBuscar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -98,7 +96,6 @@ public class MeusEventos extends javax.swing.JDialog {
         buscarBotao.setForeground(new java.awt.Color(0, 32, 144));
         buscarBotao.setText("BUSCAR");
         buscarBotao.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144), 0));
-        buscarBotao.setBorderPainted(false);
 
         quadradoEvento1.setBackground(new java.awt.Color(255, 253, 253));
 
@@ -144,11 +141,6 @@ public class MeusEventos extends javax.swing.JDialog {
         opcoesBotao1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
         opcoesBotao1.setBorderPainted(false);
         opcoesBotao1.setOpaque(false);
-        opcoesBotao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcoesBotao1ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout quadradoEvento1Layout = new javax.swing.GroupLayout(quadradoEvento1);
         quadradoEvento1.setLayout(quadradoEvento1Layout);
@@ -261,7 +253,6 @@ public class MeusEventos extends javax.swing.JDialog {
 
         opcoesBotao2.setBackground(new java.awt.Color(255, 255, 255));
         opcoesBotao2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
-        opcoesBotao2.setBorderPainted(false);
 
         ingressosVendidos2.setFont(new java.awt.Font("Tahoma", 0, 32)); // NOI18N
         ingressosVendidos2.setForeground(new java.awt.Color(0, 32, 144));
@@ -356,7 +347,6 @@ public class MeusEventos extends javax.swing.JDialog {
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketse/Pontinhos.png"))); // NOI18N
-        jButton6.setBorderPainted(false);
 
         textCategoria3.setForeground(new java.awt.Color(108, 104, 104));
         textCategoria3.setText("Categoria:");
@@ -404,6 +394,10 @@ public class MeusEventos extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel37))
                             .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                                .addComponent(textData3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(data3))
+                            .addGroup(quadradoEvento3Layout.createSequentialGroup()
                                 .addComponent(textCategoria3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(categoria3)))
@@ -412,31 +406,25 @@ public class MeusEventos extends javax.swing.JDialog {
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                                .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                                        .addComponent(textLocal3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(local3))
-                                    .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                                        .addComponent(textHora3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(hora3)))
-                                .addGap(275, 275, 275)
-                                .addComponent(ingressosVendidos3)
+                                .addComponent(textLocal3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(local3))
                             .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                                .addComponent(textData3)
+                                .addComponent(textHora3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(data3)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                                .addComponent(hora3)))
+                        .addGap(275, 275, 275)
+                        .addComponent(ingressosVendidos3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10))
         );
         quadradoEvento3Layout.setVerticalGroup(
             quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quadradoEvento3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton6)
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel36)
@@ -444,25 +432,24 @@ public class MeusEventos extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textCategoria3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(categoria3)))
-                    .addComponent(jButton6))
-                .addGap(4, 4, 4)
-                .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(data3)
-                    .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(hora3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(ingressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(quadradoEvento3Layout.createSequentialGroup()
-                            .addComponent(textData3)
-                            .addGap(1, 1, 1)
-                            .addComponent(textHora3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(1, 1, 1)
-                            .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(textLocal3)
-                                .addComponent(local3)))))
+                            .addComponent(categoria3))
+                        .addGap(4, 4, 4)
+                        .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(data3)
+                            .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(hora3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(textIngressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ingressosVendidos3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(quadradoEvento3Layout.createSequentialGroup()
+                                    .addComponent(textData3)
+                                    .addGap(1, 1, 1)
+                                    .addComponent(textHora3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(1, 1, 1)
+                                    .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(textLocal3)
+                                        .addComponent(local3)))))))
                 .addGap(37, 37, 37))
         );
 
@@ -472,17 +459,17 @@ public class MeusEventos extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(textBuscar)
-                        .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(campoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(buscarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(textTitulo))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(textBuscar)
+                    .addComponent(quadradoEvento2, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+                    .addComponent(quadradoEvento3, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(textTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(campoPesquisa, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buscarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -513,10 +500,6 @@ public class MeusEventos extends javax.swing.JDialog {
     private void campoPesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoPesquisaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoPesquisaActionPerformed
-
-    private void opcoesBotao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcoesBotao1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_opcoesBotao1ActionPerformed
 
     /**
      * @param args the command line arguments

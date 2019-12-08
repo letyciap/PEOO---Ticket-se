@@ -5,6 +5,7 @@
  */
 package ticketse;
 
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -12,24 +13,23 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-/**
- *
- * @author 20181041110020
- */
 public class Cadastro extends javax.swing.JFrame {
-    public String[] nome = new String[80];
-    public String[] cpf = new String[80];
-    public String[] email = new String[80];
-    public String[] senha = new String[80];
-    public String[] perfil = new String[80];
+    public static String[] nome = new String[80];
+    public static String[] cpf = new String[80];
+    public static String[] email = new String[80];
+    public static String[] senha = new String[80];
+    public static String[] perfil = new String[80];
+
+    /**
+     *
+     */
+    public static String[] chave = new String [80];
     
-    
-    public int contaCadastro = 0;
     /**
      * Creates new form NewJFrame
      */
     public class TelaCadastro extends JFrame {
-	
+        
 	private JTextField nomeCampo;
 	private JTextField cpfCampo;
 	private JTextField emailCampo;
@@ -45,6 +45,8 @@ public class Cadastro extends javax.swing.JFrame {
         private JComboBox perfilCampo;
         
         private JButton botaoCadastrar;
+        
+        
     }
     
     public Cadastro() {
@@ -66,7 +68,7 @@ public class Cadastro extends javax.swing.JFrame {
         textSenha = new javax.swing.JLabel();
         senhaCampo = new javax.swing.JPasswordField();
         textPerfil = new javax.swing.JLabel();
-        perfilCampo = new javax.swing.JComboBox<String>();
+        perfilCampo = new javax.swing.JComboBox<>();
         botaoCadastrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -98,7 +100,7 @@ public class Cadastro extends javax.swing.JFrame {
         textPerfil.setText("Perfil");
 
         perfilCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
+        perfilCampo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione seu perfil", "Usuário", "Administrador" }));
 
         botaoCadastrar.setBackground(new java.awt.Color(71, 94, 176));
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -173,12 +175,13 @@ public class Cadastro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
+        int contaCadastro = 0;
         nome[contaCadastro] = nomeCampo.getText();
         cpf[contaCadastro] = cpfCampo.getText();
         email[contaCadastro] = emailCampo.getText();
         senha[contaCadastro] = senhaCampo.getText();
-        perfil[contaCadastro] = (String) perfilCampo.getSelectedItem();
-
+        perfil[contaCadastro] = (String) perfilCampo.getSelectedItem(); 
+        
         if(nomeCampo.getText().equals("")){
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE NOME!");
         }
@@ -199,14 +202,20 @@ public class Cadastro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE PERFIL!");
         }
         
-        if (perfil[contaCadastro].equalsIgnoreCase("Usuário")) {
+        else if (perfil[contaCadastro].equalsIgnoreCase("Usuário")) {
             PosLoginU poslogin = new PosLoginU(new javax.swing.JFrame(), true);
             poslogin.setVisible(true);
-        }else if (perfil[contaCadastro].equalsIgnoreCase("Administrador")) {
-            ChaveDeAcesso chavedeacesso = new ChaveDeAcesso(new javax.swing.JFrame(), true);
+            chave[contaCadastro] = "000000";
+            }
+        else {
+            ChaveDeAcesso chavedeacesso = new ChaveDeAcesso(new javax.swing.JFrame(), false);
+            Random gerador = new Random();
+            int c = gerador.nextInt(1000000);
+            String cda = "" + c;
+            ChaveDeAcesso.chaveDeAcesso.setText(cda);
             chavedeacesso.setVisible(true);
-        }
-        
+       }
+        chave[contaCadastro] = ChaveDeAcesso.chaveDeAcesso.getText();
         contaCadastro++;
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 
