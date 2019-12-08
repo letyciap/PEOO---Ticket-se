@@ -51,7 +51,7 @@ public class Cadastro extends javax.swing.JFrame {
     
     public Cadastro() {
         initComponents();
-
+        setDefaultCloseOperation(Ticketse.HIDE_ON_CLOSE);
     }
 
     @SuppressWarnings("unchecked")

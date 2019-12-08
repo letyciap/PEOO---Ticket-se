@@ -17,8 +17,8 @@ public class LoginUsuario extends javax.swing.JDialog {
         loginText = new javax.swing.JLabel();
         nomeCampo = new javax.swing.JTextField();
         senhaText = new javax.swing.JLabel();
-        senhaCampo = new javax.swing.JTextField();
         entrarBotao = new javax.swing.JButton();
+        senhaCampo = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -39,14 +39,6 @@ public class LoginUsuario extends javax.swing.JDialog {
         senhaText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         senhaText.setText("Senha:");
 
-        senhaCampo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaCampo.setMinimumSize(new java.awt.Dimension(6, 27));
-        senhaCampo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senhaCampoActionPerformed(evt);
-            }
-        });
-
         entrarBotao.setBackground(new java.awt.Color(71, 94, 176));
         entrarBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         entrarBotao.setForeground(new java.awt.Color(255, 255, 255));
@@ -63,12 +55,12 @@ public class LoginUsuario extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(83, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(senhaText)
-                    .addComponent(loginText)
-                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(senhaCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(senhaCampo)
+                    .addComponent(senhaText, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(loginText, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
                         .addComponent(nomeCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(83, Short.MAX_VALUE))
@@ -78,25 +70,21 @@ public class LoginUsuario extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(17, 17, 17)
                 .addComponent(loginText)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nomeCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
                 .addComponent(senhaText)
-                .addGap(6, 6, 6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(senhaCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addComponent(entrarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(33, 33, 33))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void senhaCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaCampoActionPerformed
-
-    }//GEN-LAST:event_senhaCampoActionPerformed
 
     private void nomeCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeCampoActionPerformed
         // TODO add your handling code here:
@@ -161,7 +149,7 @@ public class LoginUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel loginText;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField nomeCampo;
-    private javax.swing.JTextField senhaCampo;
+    private javax.swing.JPasswordField senhaCampo;
     private javax.swing.JLabel senhaText;
     // End of variables declaration//GEN-END:variables
 }

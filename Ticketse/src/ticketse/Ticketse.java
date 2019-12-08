@@ -7,6 +7,7 @@ public class Ticketse extends javax.swing.JFrame {
      */
     public Ticketse() {
         initComponents();
+        setDefaultCloseOperation(Ticketse.HIDE_ON_CLOSE);
     }
 
     /**
@@ -504,6 +505,7 @@ public class Ticketse extends javax.swing.JFrame {
 
     private void botaoBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoBuscarActionPerformed
         String busca = campoDePesquisa.getText();
+        
         
     }//GEN-LAST:event_botaoBuscarActionPerformed
 

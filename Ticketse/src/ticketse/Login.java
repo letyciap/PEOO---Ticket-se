@@ -16,6 +16,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        setDefaultCloseOperation(Ticketse.HIDE_ON_CLOSE);
     }
 
     Login(Ticketse aThis, boolean b) {
