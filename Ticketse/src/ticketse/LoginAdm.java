@@ -84,9 +84,8 @@ public class LoginAdm extends javax.swing.JDialog {
                     .addComponent(senhaText, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(chaveDeAcessoText, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                        .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(entrarBotao, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(chaveDeAcessoCampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -109,7 +108,7 @@ public class LoginAdm extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    public static Ticketse ticketse = new Ticketse();
     private void chaveDeAcessoCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chaveDeAcessoCampoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_chaveDeAcessoCampoActionPerformed
@@ -117,10 +116,10 @@ public class LoginAdm extends javax.swing.JDialog {
     private void entrarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarBotaoActionPerformed
         for (int i = 0; i <Cadastro.chave.length; i++) {
             if (Cadastro.chave[i].equals(chaveDeAcessoCampo.getText()) && Cadastro.senha[i].equals(senhaCampo.getText())) {
-                Ticketse ticketse = new Ticketse();
                 Ticketse.quadradoEvento1.setVisible(false);
                 Ticketse.quadradoEvento2.setVisible(false);
                 Ticketse.quadradoEvento3.setVisible(false);
+                ChaveDeAcesso.loginadm.setVisible(false);
                 ticketse.setVisible(true);
             }else if (i == Cadastro.chave.length - 1){
                 JOptionPane.showMessageDialog(rootPane, "LOGIN INVÁLIDO. POR FAVOR, CONFIRA SE OS CAMPOS FORAM PREENCHIDOS CORRETAMENTE.");

@@ -10,10 +10,11 @@ package ticketse;
  * @author 20181041110020
  */
 public class Login extends javax.swing.JFrame {
+    public static LoginAdm loginAdm = new LoginAdm(new javax.swing.JFrame(), false);
+    public static LoginUsuario loginU = new LoginUsuario(new javax.swing.JFrame(), false);   
+    public static Cadastro cadastro = new Cadastro();
 
-    /**
-     * Creates new form LoginO
-     */
+
     public Login() {
         initComponents();
         setDefaultCloseOperation(Ticketse.HIDE_ON_CLOSE);
@@ -114,21 +115,16 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdmActionPerformed
-        // TODO add your handling code here:
-        LoginAdm loginAdm = new LoginAdm(this, false);
         loginAdm.setVisible(true);
     }//GEN-LAST:event_botaoAdmActionPerformed
 
     private void botaoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoUsuarioActionPerformed
-        // TODO add your handling code here:
-        
-        LoginUsuario loginU = new LoginUsuario(this, false);
         loginU.setVisible(true);
     }//GEN-LAST:event_botaoUsuarioActionPerformed
 
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
         // TODO add your handling code here:
-        Cadastro cadastro = new Cadastro();
+        
         cadastro.setVisible(true);
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 

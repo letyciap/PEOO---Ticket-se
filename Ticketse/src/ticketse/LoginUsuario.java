@@ -3,7 +3,9 @@ package ticketse;
 import javax.swing.JOptionPane;
 
 public class LoginUsuario extends javax.swing.JDialog {
-
+    
+    public static TicketseU ticketseu = new TicketseU();
+    
     public LoginUsuario(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -60,9 +62,8 @@ public class LoginUsuario extends javax.swing.JDialog {
                     .addComponent(senhaText, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(loginText, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(logo, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(entrarBotao, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                        .addComponent(nomeCampo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(entrarBotao, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(nomeCampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -91,15 +92,25 @@ public class LoginUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_nomeCampoActionPerformed
 
     private void entrarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarBotaoActionPerformed
-        for (int i = 0; i <Cadastro.nome.length; i++) {
+        for (int i = 0; i < Cadastro.nome.length; i++) {
             if (Cadastro.nome[i].equals(nomeCampo.getText()) && Cadastro.senha[i].equals(senhaCampo.getText())) {
-                TicketseU ticketseu = new TicketseU();
+                TicketseU.quadradoEvento1.setVisible(true);
+                TicketseU.titulo1.setText(Ticketse.titulo1.getText());
+                TicketseU.data1.setText(Ticketse.data1.getText());
+                TicketseU.descricao1.setText(Ticketse.descricao1.getText());
+                TicketseU.hora1.setText(Ticketse.hora1.getText());
+                TicketseU.local1.setText(Ticketse.local1.getText());
+                TicketseU.preco1.setText("R$ " + CadastrarEvento.precoCampo.getText());
+                TicketseU.quadradoEvento2.setVisible(false);
+                TicketseU.quadradoEvento3.setVisible(false);
                 ticketseu.setVisible(true);
-            }else if (i == Cadastro.chave.length - 1){
+                Login.loginU.setVisible(false);
+                PosLoginU.loginusuario.setVisible(false);
+            } else if (i == Cadastro.nome.length - 1) {
                 JOptionPane.showMessageDialog(rootPane, "LOGIN INVÁLIDO. POR FAVOR, CONFIRA SE OS CAMPOS FORAM PREENCHIDOS CORRETAMENTE.");
             }
         }
-                      
+
     }//GEN-LAST:event_entrarBotaoActionPerformed
 
     /**
@@ -148,8 +159,8 @@ public class LoginUsuario extends javax.swing.JDialog {
     private javax.swing.JButton entrarBotao;
     private javax.swing.JLabel loginText;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField nomeCampo;
-    private javax.swing.JPasswordField senhaCampo;
+    public static javax.swing.JTextField nomeCampo;
+    public static javax.swing.JPasswordField senhaCampo;
     private javax.swing.JLabel senhaText;
     // End of variables declaration//GEN-END:variables
 }

@@ -13,7 +13,8 @@ import javax.swing.JOptionPane;
  */
 public class CadastrarEvento extends javax.swing.JDialog {
 
-    public int evento = 0;
+    
+    public static int evento = 0;
 
     public CadastrarEvento(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -203,84 +204,52 @@ public class CadastrarEvento extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+        public static Ticketse ticketse;
     private void okBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okBotaoActionPerformed
-        evento++;
+
         if (caixaCategorias.getSelectedItem().equals("Selecione a categoria do evento")) {
             JOptionPane.showMessageDialog(rootPane, "SELECIONE A CATEGORIA DO EVENTO!");
         }
 
-        if (nomeCampo.getText().equals("")) {
+        else if (nomeCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE TÍTULO!");
         }
 
-        if (descricaoCampo.getText().equals("")) {
+        else if (descricaoCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE DESCRIÇÃO!");
         }
 
-        if (localCampo.getText().equals("")) {
+        else if (localCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE LOCAL!");
         }
 
-        if (dataCampo.getText().equals("Selecione seu perfil")) {
+        else if (dataCampo.getText().equals("Selecione seu perfil")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE DATA!");
         }
-        if (horaCampo.getText().equals("")) {
+        else if (horaCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE HORA!");
         }
 
-        if (precoCampo.getText().equals("")) {
+        else if (precoCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE PREÇO!");
         }
 
-        if (vagasCampo.getText().equals("")) {
+        else if (vagasCampo.getText().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE VAGAS!");
         } else {
-            Ticketse ticketse = new Ticketse();
+            ticketse = new Ticketse();
             Ticketse.quadradoEvento2.setVisible(false);
             Ticketse.quadradoEvento3.setVisible(false);
-            if (evento == 1) {
-                Ticketse.titulo1.setText(nomeCampo.getText());
-                Ticketse.data1.setText(dataCampo.getText());
-                Ticketse.descricao1.setText(descricaoCampo.getText());
-                Ticketse.hora1.setText(horaCampo.getText());
-                Ticketse.local1.setText(localCampo.getText());
-            } else if (evento == 2) {
-                Ticketse.titulo1.setText(nomeCampo.getText());
-                Ticketse.data1.setText(dataCampo.getText());
-                Ticketse.descricao1.setText(descricaoCampo.getText());
-                Ticketse.hora1.setText(horaCampo.getText());
-                Ticketse.local1.setText(localCampo.getText());
-                Ticketse.quadradoEvento2.setVisible(true);
-                Ticketse.titulo2.setText(nomeCampo.getText());
-                Ticketse.data2.setText(dataCampo.getText());
-                Ticketse.descricao2.setText(descricaoCampo.getText());
-                Ticketse.hora2.setText(horaCampo.getText());
-                Ticketse.local2.setText(localCampo.getText());
-            } else {
-                Ticketse.titulo1.setText(nomeCampo.getText());
-                Ticketse.data1.setText(dataCampo.getText());
-                Ticketse.descricao1.setText(descricaoCampo.getText());
-                Ticketse.hora1.setText(horaCampo.getText());
-                Ticketse.local1.setText(localCampo.getText());
-                Ticketse.quadradoEvento2.setVisible(true);
-                Ticketse.titulo2.setText(nomeCampo.getText());
-                Ticketse.data2.setText(dataCampo.getText());
-                Ticketse.descricao2.setText(descricaoCampo.getText());
-                Ticketse.hora2.setText(horaCampo.getText());
-                Ticketse.local2.setText(localCampo.getText());
-                Ticketse.quadradoEvento3.setVisible(true);
-                Ticketse.titulo3.setText(nomeCampo.getText());
-                Ticketse.data3.setText(dataCampo.getText());
-                Ticketse.descricao3.setText(descricaoCampo.getText());
-                Ticketse.hora3.setText(horaCampo.getText());
-                Ticketse.local3.setText(localCampo.getText());
-
-            }
-        
-        ticketse.setVisible(true);
+            Ticketse.quadradoEvento1.setVisible(true);
+            Ticketse.titulo1.setText(nomeCampo.getText());
+            Ticketse.data1.setText(dataCampo.getText());
+            Ticketse.descricao1.setText(descricaoCampo.getText());
+            Ticketse.hora1.setText(horaCampo.getText());
+            Ticketse.local1.setText(localCampo.getText());
+            Ticketse.vagas1.setText(vagasCampo.getText());
+            Ticketse.gerenciarevento.setVisible(false);
+            CadastrarEvento.ticketse.setVisible(true);
         }
-        
     }//GEN-LAST:event_okBotaoActionPerformed
 
     private void caixaCategoriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaCategoriasActionPerformed
@@ -331,14 +300,14 @@ public class CadastrarEvento extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> caixaCategorias;
+    public static javax.swing.JComboBox<String> caixaCategorias;
     private javax.swing.JTextField dataCampo;
     private javax.swing.JTextField descricaoCampo;
     private javax.swing.JTextField horaCampo;
     private javax.swing.JTextField localCampo;
     private javax.swing.JTextField nomeCampo;
     private javax.swing.JButton okBotao;
-    private javax.swing.JTextField precoCampo;
+    public static javax.swing.JTextField precoCampo;
     private javax.swing.JLabel textCategoria;
     private javax.swing.JLabel textData;
     private javax.swing.JLabel textDescricao;

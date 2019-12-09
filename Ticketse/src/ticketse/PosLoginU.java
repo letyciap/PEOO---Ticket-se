@@ -10,10 +10,8 @@ package ticketse;
  * @author 20181041110020
  */
 public class PosLoginU extends javax.swing.JDialog {
-
-    /**
-     * Creates new form PosLoginU
-     */
+    public static LoginUsuario loginusuario = new LoginUsuario(new javax.swing.JFrame(), false);
+    
     public PosLoginU(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -69,21 +67,21 @@ public class PosLoginU extends javax.swing.JDialog {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
                 .addComponent(textCadastroRealizado)
-                .addGap(90, 90, 90)
+                .addGap(18, 18, 18)
                 .addComponent(botaoEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
-        LoginUsuario loginusuario = new LoginUsuario(new javax.swing.JFrame(), true);
-        loginusuario.setVisible(true);
+    loginusuario.setVisible(true);
+    Cadastro.poslogin.setVisible(false);
     }//GEN-LAST:event_botaoEntrarActionPerformed
 
     /**

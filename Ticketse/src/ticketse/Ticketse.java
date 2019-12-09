@@ -1,10 +1,9 @@
 package ticketse;
 
-public class Ticketse extends javax.swing.JFrame {
+import javax.swing.JOptionPane;
 
-    /**
-     * Creates new form Ticketse
-     */
+public class Ticketse extends javax.swing.JFrame {
+    
     public Ticketse() {
         initComponents();
         setDefaultCloseOperation(Ticketse.HIDE_ON_CLOSE);
@@ -37,6 +36,9 @@ public class Ticketse extends javax.swing.JFrame {
         textLocal1 = new javax.swing.JLabel();
         local1 = new javax.swing.JLabel();
         editar1 = new javax.swing.JButton();
+        textVagas1 = new javax.swing.JLabel();
+        vagas1 = new javax.swing.JLabel();
+        compras1 = new javax.swing.JButton();
         quadradoEvento2 = new javax.swing.JPanel();
         titulo2 = new javax.swing.JLabel();
         descricao2 = new javax.swing.JLabel();
@@ -48,6 +50,9 @@ public class Ticketse extends javax.swing.JFrame {
         textLocal2 = new javax.swing.JLabel();
         local2 = new javax.swing.JLabel();
         editar2 = new javax.swing.JButton();
+        textVagas2 = new javax.swing.JLabel();
+        vagas2 = new javax.swing.JLabel();
+        compras2 = new javax.swing.JButton();
         quadradoEvento3 = new javax.swing.JPanel();
         titulo3 = new javax.swing.JLabel();
         descricao3 = new javax.swing.JLabel();
@@ -59,6 +64,9 @@ public class Ticketse extends javax.swing.JFrame {
         textLocal3 = new javax.swing.JLabel();
         local3 = new javax.swing.JLabel();
         editar3 = new javax.swing.JButton();
+        textVagas3 = new javax.swing.JLabel();
+        vagas3 = new javax.swing.JLabel();
+        compras3 = new javax.swing.JButton();
         botaoSair = new javax.swing.JButton();
 
         jToggleButton1.setText("jToggleButton1");
@@ -158,6 +166,27 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
+        textVagas1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textVagas1.setForeground(new java.awt.Color(115, 115, 115));
+        textVagas1.setText("Vagas limite:");
+
+        vagas1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        vagas1.setForeground(new java.awt.Color(115, 115, 115));
+        vagas1.setText("00");
+
+        compras1.setBackground(new java.awt.Color(71, 94, 176));
+        compras1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        compras1.setForeground(new java.awt.Color(255, 255, 255));
+        compras1.setText("Compras");
+        compras1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        compras1.setBorderPainted(false);
+        compras1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        compras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compras1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout quadradoEvento1Layout = new javax.swing.GroupLayout(quadradoEvento1);
         quadradoEvento1.setLayout(quadradoEvento1Layout);
         quadradoEvento1Layout.setHorizontalGroup(
@@ -168,6 +197,8 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento1Layout.createSequentialGroup()
                         .addComponent(titulo1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(compras1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(editar1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -185,7 +216,11 @@ public class Ticketse extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(textLocal1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local1))
+                                .addComponent(local1)
+                                .addGap(18, 18, 18)
+                                .addComponent(textVagas1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(vagas1))
                             .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(34, Short.MAX_VALUE))))
         );
@@ -196,7 +231,8 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGroup(quadradoEvento1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titulo1)
-                    .addComponent(editar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(editar1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(compras1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -206,7 +242,9 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(local1)
                     .addComponent(textData1)
                     .addComponent(textHora1)
-                    .addComponent(textLocal1))
+                    .addComponent(textLocal1)
+                    .addComponent(textVagas1)
+                    .addComponent(vagas1))
                 .addGap(7, 7, 7))
         );
 
@@ -270,6 +308,27 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
+        textVagas2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textVagas2.setForeground(new java.awt.Color(115, 115, 115));
+        textVagas2.setText("Vagas limite:");
+
+        vagas2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        vagas2.setForeground(new java.awt.Color(115, 115, 115));
+        vagas2.setText("00");
+
+        compras2.setBackground(new java.awt.Color(71, 94, 176));
+        compras2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        compras2.setForeground(new java.awt.Color(255, 255, 255));
+        compras2.setText("Compras");
+        compras2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        compras2.setBorderPainted(false);
+        compras2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        compras2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compras2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout quadradoEvento2Layout = new javax.swing.GroupLayout(quadradoEvento2);
         quadradoEvento2.setLayout(quadradoEvento2Layout);
         quadradoEvento2Layout.setHorizontalGroup(
@@ -280,6 +339,8 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento2Layout.createSequentialGroup()
                         .addComponent(titulo2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(compras2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(editar2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(excluir2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -297,7 +358,11 @@ public class Ticketse extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(textLocal2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local2)))
+                                .addComponent(local2)
+                                .addGap(18, 18, 18)
+                                .addComponent(textVagas2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(vagas2)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -308,7 +373,8 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGroup(quadradoEvento2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(excluir2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titulo2)
-                    .addComponent(editar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(editar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(compras2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -318,7 +384,9 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(local2)
                     .addComponent(textData2)
                     .addComponent(textHora2)
-                    .addComponent(textLocal2))
+                    .addComponent(textLocal2)
+                    .addComponent(textVagas2)
+                    .addComponent(vagas2))
                 .addGap(7, 7, 7))
         );
 
@@ -382,6 +450,27 @@ public class Ticketse extends javax.swing.JFrame {
             }
         });
 
+        textVagas3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textVagas3.setForeground(new java.awt.Color(115, 115, 115));
+        textVagas3.setText("Vagas limite:");
+
+        vagas3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        vagas3.setForeground(new java.awt.Color(115, 115, 115));
+        vagas3.setText("00");
+
+        compras3.setBackground(new java.awt.Color(71, 94, 176));
+        compras3.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        compras3.setForeground(new java.awt.Color(255, 255, 255));
+        compras3.setText("Compras");
+        compras3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 32, 144)));
+        compras3.setBorderPainted(false);
+        compras3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        compras3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compras3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout quadradoEvento3Layout = new javax.swing.GroupLayout(quadradoEvento3);
         quadradoEvento3.setLayout(quadradoEvento3Layout);
         quadradoEvento3Layout.setHorizontalGroup(
@@ -392,6 +481,8 @@ public class Ticketse extends javax.swing.JFrame {
                     .addGroup(quadradoEvento3Layout.createSequentialGroup()
                         .addComponent(titulo3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(compras3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(editar3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(excluir3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -409,7 +500,11 @@ public class Ticketse extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(textLocal3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(local3)))
+                                .addComponent(local3)
+                                .addGap(18, 18, 18)
+                                .addComponent(textVagas3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(vagas3)))
                         .addGap(0, 24, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -420,7 +515,8 @@ public class Ticketse extends javax.swing.JFrame {
                 .addGroup(quadradoEvento3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(excluir3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titulo3)
-                    .addComponent(editar3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(editar3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(compras3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descricao3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -430,7 +526,9 @@ public class Ticketse extends javax.swing.JFrame {
                     .addComponent(local3)
                     .addComponent(textData3)
                     .addComponent(textHora3)
-                    .addComponent(textLocal3))
+                    .addComponent(textLocal3)
+                    .addComponent(textVagas3)
+                    .addComponent(vagas3))
                 .addGap(7, 7, 7))
         );
 
@@ -497,10 +595,19 @@ public class Ticketse extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    public static CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
+    int evento = 0;
     private void botaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastrarActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
-        gerenciarevento.setVisible(true);
+        evento++;
+        if( evento == 1){
+            LoginAdm.ticketse.setVisible(false);
+            gerenciarevento.setVisible(true);
+        }
+        if (!quadradoEvento1.isVisible()){
+            CadastrarEvento.ticketse.setVisible(false);
+            gerenciarevento.setVisible(true);
+        }
+
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 
     private void botaoBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoBuscarActionPerformed
@@ -511,6 +618,7 @@ public class Ticketse extends javax.swing.JFrame {
 
     private void excluir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir2ActionPerformed
         quadradoEvento2.setVisible(false);
+        
     }//GEN-LAST:event_excluir2ActionPerformed
 
     private void excluir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir3ActionPerformed
@@ -518,8 +626,7 @@ public class Ticketse extends javax.swing.JFrame {
     }//GEN-LAST:event_excluir3ActionPerformed
 
     private void botaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSairActionPerformed
-        Login login = new Login();
-        login.setVisible(true);
+        CadastrarEvento.ticketse.setVisible(false);
     }//GEN-LAST:event_botaoSairActionPerformed
 
     private void excluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluir1ActionPerformed
@@ -527,19 +634,36 @@ public class Ticketse extends javax.swing.JFrame {
     }//GEN-LAST:event_excluir1ActionPerformed
 
     private void editar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar1ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
+        CadastrarEvento.ticketse.setVisible(false);
         gerenciarevento.setVisible(true);
     }//GEN-LAST:event_editar1ActionPerformed
 
     private void editar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar2ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
+        CadastrarEvento.ticketse.setVisible(false);
         gerenciarevento.setVisible(true);
     }//GEN-LAST:event_editar2ActionPerformed
 
     private void editar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar3ActionPerformed
-        CadastrarEvento gerenciarevento = new CadastrarEvento(new javax.swing.JFrame(), false);
+        CadastrarEvento.ticketse.setVisible(false);
         gerenciarevento.setVisible(true);
     }//GEN-LAST:event_editar3ActionPerformed
+
+    private void compras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compras1ActionPerformed
+        if (Pagamento.compra == 0) {
+            JOptionPane.showMessageDialog(rootPane, "NINGUÉM COMPROU INGRESSO PARA ESSE EVENTO!");
+        }
+        else{
+            JOptionPane.showMessageDialog(rootPane, Pagamento.nomeCampo.getText() + "COMPROU INGRESSO PARA ESSE EVENTO!");
+        }
+    }//GEN-LAST:event_compras1ActionPerformed
+
+    private void compras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compras2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_compras2ActionPerformed
+
+    private void compras3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compras3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_compras3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -582,6 +706,9 @@ public class Ticketse extends javax.swing.JFrame {
     public static javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoSair;
     private javax.swing.JTextField campoDePesquisa;
+    private javax.swing.JButton compras1;
+    private javax.swing.JButton compras2;
+    private javax.swing.JButton compras3;
     public static javax.swing.JLabel data1;
     public static javax.swing.JLabel data2;
     public static javax.swing.JLabel data3;
@@ -615,8 +742,14 @@ public class Ticketse extends javax.swing.JFrame {
     private javax.swing.JLabel textLocal1;
     private javax.swing.JLabel textLocal2;
     private javax.swing.JLabel textLocal3;
+    private javax.swing.JLabel textVagas1;
+    private javax.swing.JLabel textVagas2;
+    private javax.swing.JLabel textVagas3;
     public static javax.swing.JLabel titulo1;
     public static javax.swing.JLabel titulo2;
     public static javax.swing.JLabel titulo3;
+    public static javax.swing.JLabel vagas1;
+    protected static javax.swing.JLabel vagas2;
+    protected static javax.swing.JLabel vagas3;
     // End of variables declaration//GEN-END:variables
 }

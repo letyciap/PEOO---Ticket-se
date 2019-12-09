@@ -20,14 +20,12 @@ public class Cadastro extends javax.swing.JFrame {
     public static String[] senha = new String[80];
     public static String[] perfil = new String[80];
 
-    /**
-     *
-     */
+    public static PosLoginU poslogin = new PosLoginU(new javax.swing.JFrame(), false);
+    public static ChaveDeAcesso chavedeacesso = new ChaveDeAcesso(new javax.swing.JFrame(), false);
+    
     public static String[] chave = new String [80];
     
-    /**
-     * Creates new form NewJFrame
-     */
+    
     public class TelaCadastro extends JFrame {
         
 	private JTextField nomeCampo;
@@ -203,17 +201,19 @@ public class Cadastro extends javax.swing.JFrame {
         }
         
         else if (perfil[contaCadastro].equalsIgnoreCase("Usuário")) {
-            PosLoginU poslogin = new PosLoginU(new javax.swing.JFrame(), true);
+            Login.cadastro.setVisible(false);
             poslogin.setVisible(true);
             chave[contaCadastro] = "000000";
             }
         else {
-            ChaveDeAcesso chavedeacesso = new ChaveDeAcesso(new javax.swing.JFrame(), false);
+            
             Random gerador = new Random();
             int c = gerador.nextInt(1000000);
             String cda = "" + c;
             ChaveDeAcesso.chaveDeAcesso.setText(cda);
+            Login.cadastro.setVisible(false);
             chavedeacesso.setVisible(true);
+
        }
         chave[contaCadastro] = ChaveDeAcesso.chaveDeAcesso.getText();
         contaCadastro++;
@@ -257,10 +257,10 @@ public class Cadastro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoCadastrar;
-    private javax.swing.JTextField cpfCampo;
-    private javax.swing.JTextField emailCampo;
+    public static javax.swing.JTextField cpfCampo;
+    public static javax.swing.JTextField emailCampo;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField nomeCampo;
+    public static javax.swing.JTextField nomeCampo;
     private javax.swing.JComboBox<String> perfilCampo;
     private javax.swing.JPasswordField senhaCampo;
     private javax.swing.JLabel textCPF;

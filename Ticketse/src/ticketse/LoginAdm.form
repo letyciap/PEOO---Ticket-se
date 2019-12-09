@@ -30,10 +30,8 @@
                   <Component id="senhaText" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="chaveDeAcessoText" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="logo" alignment="1" pref="214" max="32767" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="entrarBotao" alignment="0" pref="214" max="32767" attributes="0"/>
-                      <Component id="chaveDeAcessoCampo" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="entrarBotao" alignment="0" pref="214" max="32767" attributes="0"/>
+                  <Component id="chaveDeAcessoCampo" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="83" max="32767" attributes="0"/>
           </Group>

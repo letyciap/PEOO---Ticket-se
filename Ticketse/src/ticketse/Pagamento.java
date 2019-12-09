@@ -5,15 +5,16 @@
  */
 package ticketse;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author glori
  */
 public class Pagamento extends javax.swing.JDialog {
-
-    /**
-     * Creates new form Pagamento
-     */
+    public static PagamentoRealizado pagamentor = new PagamentoRealizado(new javax.swing.JFrame(), true);
+    public static int compra = 0;
+    
     public Pagamento(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -54,10 +55,12 @@ public class Pagamento extends javax.swing.JDialog {
         textValidade.setText("Data de validade:");
 
         caixaMes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        caixaMes.setMaximumRowCount(12);
         caixaMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mês", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
         caixaAno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaAno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ano", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        caixaAno.setMaximumRowCount(13);
+        caixaAno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ano", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030" }));
 
         textCodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         textCodigo.setText("Código de segurança:");
@@ -73,7 +76,13 @@ public class Pagamento extends javax.swing.JDialog {
         textParcelas.setText("Número de parcelas:");
 
         caixaParcelas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        caixaParcelas.setMaximumRowCount(4);
+        caixaParcelas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione a quantidade de parcelas", "1x", "2x", "3x" }));
+        caixaParcelas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaParcelasActionPerformed(evt);
+            }
+        });
 
         cancelarBotao.setBackground(new java.awt.Color(71, 94, 176));
         cancelarBotao.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -135,9 +144,9 @@ public class Pagamento extends javax.swing.JDialog {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addComponent(textTitulo)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(textNumeroCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(numeroCartaoCampo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -162,19 +171,55 @@ public class Pagamento extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comprarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cancelarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void comprarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarBotaoActionPerformed
-        // TODO add your handling code here:
+        if(numeroCartaoCampo.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE NÚMERO DO CARTÃO!");
+        }
+        
+        else if(caixaMes.getSelectedItem().equals("Mês")){
+            JOptionPane.showMessageDialog(rootPane, "SELECIONE O MÊS DE VALIDADE!");
+        }
+        
+        else if(caixaAno.getSelectedItem().equals("Ano")){
+            JOptionPane.showMessageDialog(rootPane, "SELECIONE O ANO DE VALIDADE!");
+        }
+        
+        else if(codigoCampo.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE CÓDIGO!");
+        }
+        
+        else if(nomeCampo.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "PREENCHA O CAMPO DE NOME NO CARTÃO!");
+        }
+        
+        else if(nomeCampo.getText().equalsIgnoreCase(MeusEventos.categoria1.getText())){
+            JOptionPane.showMessageDialog(rootPane, "UM INGRESSO JÁ FOI VENDIDO PARA ESSA PESSOA!");
+        }
+        
+        else if(caixaParcelas.getSelectedItem().equals("Selecione a quantidade de parcelas")){
+            JOptionPane.showMessageDialog(rootPane, "SELECIONE A QUANTIDADE DE PARCELAS!");
+        }
+        
+        else{
+        TicketseU.pagamento.setVisible(false);
+        pagamentor.setVisible(true);
+        compra++;
+        } 
     }//GEN-LAST:event_comprarBotaoActionPerformed
 
     private void cancelarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarBotaoActionPerformed
-        // TODO add your handling code here:
+        TicketseU.pagamento.setVisible(false);
     }//GEN-LAST:event_cancelarBotaoActionPerformed
+
+    private void caixaParcelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaParcelasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaParcelasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,7 +270,7 @@ public class Pagamento extends javax.swing.JDialog {
     private javax.swing.JButton cancelarBotao;
     private javax.swing.JTextField codigoCampo;
     private javax.swing.JButton comprarBotao;
-    private javax.swing.JTextField nomeCampo;
+    public static javax.swing.JTextField nomeCampo;
     private javax.swing.JTextField numeroCartaoCampo;
     private javax.swing.JLabel textCodigo;
     private javax.swing.JLabel textNome;

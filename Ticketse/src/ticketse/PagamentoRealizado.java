@@ -10,7 +10,7 @@ package ticketse;
  * @author 20181041110020
  */
 public class PagamentoRealizado extends javax.swing.JDialog {
-
+    public static ImprimirIngresso imprimir = new ImprimirIngresso(new javax.swing.JFrame(), true);
     /**
      * Creates new form PagamentoRealizado
      */
@@ -46,7 +46,7 @@ public class PagamentoRealizado extends javax.swing.JDialog {
         voltarTelaIniciaoBotao.setBackground(new java.awt.Color(71, 94, 176));
         voltarTelaIniciaoBotao.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         voltarTelaIniciaoBotao.setForeground(new java.awt.Color(255, 255, 255));
-        voltarTelaIniciaoBotao.setText("<html> VOLTAR A TELA <br> INICIAL");
+        voltarTelaIniciaoBotao.setText("<html>      VOLTAR À <br> TELA INICIAL");
         voltarTelaIniciaoBotao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         voltarTelaIniciaoBotao.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         voltarTelaIniciaoBotao.addActionListener(new java.awt.event.ActionListener() {
@@ -100,11 +100,21 @@ public class PagamentoRealizado extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void voltarTelaIniciaoBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarTelaIniciaoBotaoActionPerformed
-        // TODO add your handling code here:
+        Pagamento.pagamentor.setVisible(false);
     }//GEN-LAST:event_voltarTelaIniciaoBotaoActionPerformed
 
     private void imprimirBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imprimirBotaoActionPerformed
-        // TODO add your handling code here:
+        ImprimirIngresso.nome.setText(Cadastro.nomeCampo.getText());
+        ImprimirIngresso.email.setText(Cadastro.emailCampo.getText());
+        ImprimirIngresso.cpf.setText(Cadastro.cpfCampo.getText());
+        ImprimirIngresso.titulo.setText(Ticketse.titulo1.getText());
+        ImprimirIngresso.descricao.setText(Ticketse.descricao1.getText());
+        ImprimirIngresso.data.setText(Ticketse.data1.getText());
+        ImprimirIngresso.hora.setText(Ticketse.hora1.getText());
+        ImprimirIngresso.local.setText(Ticketse.local1.getText());
+        ImprimirIngresso.preço.setText("R$" + CadastrarEvento.precoCampo.getText());
+        imprimir.setVisible(true);
+        Pagamento.pagamentor.setVisible(false);
     }//GEN-LAST:event_imprimirBotaoActionPerformed
 
     /**

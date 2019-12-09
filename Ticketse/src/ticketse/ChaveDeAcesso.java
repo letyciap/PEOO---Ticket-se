@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ticketse;
-import java.util.Random;
 import javax.swing.JLabel;
 
 /**
@@ -12,7 +11,7 @@ import javax.swing.JLabel;
  * @author 20181041110020
  */
 public class ChaveDeAcesso extends javax.swing.JDialog {
-    
+   public static LoginAdm loginadm = new LoginAdm(new javax.swing.JFrame(), false);
     public ChaveDeAcesso(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         chaveDeAcesso = new JLabel();
@@ -104,7 +103,7 @@ public class ChaveDeAcesso extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
-        LoginAdm loginadm = new LoginAdm(new javax.swing.JFrame(), false);
+        Cadastro.chavedeacesso.setVisible(false);
         loginadm.setVisible(true);
     }//GEN-LAST:event_botaoEntrarActionPerformed
 
